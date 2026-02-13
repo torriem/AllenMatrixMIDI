@@ -1,5 +1,5 @@
 # Allen MOS II Organ Keyboard Matrix to USB MIDI Adapter
-This is a Teensy 4.1 sketch for connecting an Allen MOS II Organ's keyboards to a computer over USB MIDI.
+This is a Teensy 4.1 sketch for connecting an Allen MOS II Organ's keyboards to a computer over USB MIDI.  It's designed to read the 11x6 keyboard matrix for each keyboard, and also the pedal board, and export them as a MIDI device suitable to connect to any virtual pipe organ.
 
 ## Operation
 The keyboards all share a common set of read wires.  Each keyboard uses 11 read wires and the pedal board uses at least 8.  Each keyboard has its own set of six signal wires.  To read the keyboards a microcontroller (the organ itself or a Teensy) raises each signal wire in turn to a high state and then reads the key pressed signals from the read wires.  This is done in a sequential cycle, many times per second. In this way a relatively few wires can read the entire keyboard quickly, and multiple keys can be pressed at once.
