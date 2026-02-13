@@ -6,11 +6,12 @@
  * - 11 input pins (row sensors)
  * 
  * Debouncing uses Bounce2's Debouncer class to track stable state over time.
- * USB MIDI output with channel assignment based on column ranges.
+ * USB MIDI output using Teensy's built-in usbMIDI object.
  */
 
 #include <Bounce2.h>
-#include <USB-MIDI.h>
+
+#define USE_MIDI
 
 // Configuration
 const int COLUMN_COUNT = 18;
@@ -43,6 +44,7 @@ const int midiNoteMap[COLUMN_COUNT][ROW_COUNT] = {
 
 // Pin assignments - Teensy 4.1 pins
 // Using pins 2-19 for outputs (leaving serial port 1 pins 0,1 available)
+// Rows use internal pull-downs, input goes HIGH when key pressed
 // Adjust these as needed for your hardware
 const uint8_t OUTPUT_PINS[COLUMN_COUNT] = {
   2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
@@ -52,15 +54,19 @@ const uint8_t INPUT_PINS[ROW_COUNT] = {
   20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
 };
 
-// Matrix state storage
-bool currentMatrix[COLUMN_COUNT][ROW_COUNT];
-bool debouncedMatrix[COLUMN_COUNT][ROW_COUNT];
-
-// Bounce objects for debouncing - one per row per column
-Bounce debouncers[COLUMN_COUNT][ROW_COUNT];
-
-// USB MIDI instance
-USBMIDI midi;
+class MatrixDebouncer : public Debouncer {
+public:
+  bool update(bool newState) {
+    currentState = newState;
+    return Debouncer::update();
+  }
+protected:
+  bool currentState;
+  virtual bool readCurrentState() override {
+    return currentState;
+  }
+};
+MatrixDebouncer debouncers[COLUMN_COUNT][ROW_COUNT];
 
 // Tracking variables
 unsigned long lastScanTime = 0;
@@ -68,36 +74,36 @@ unsigned long lastScanTime = 0;
 void setup() {
   Serial.begin(9600);
   
-  midi.begin();
-  
   // Initialize output pins (all low initially)
-  for (int col = 0; col < COLUMN_COUNT; col++) {
-    pinMode(OUTPUT_PINS[col], OUTPUT);
-    digitalWrite(OUTPUT_PINS[col], LOW);
-    for (int row = 0; row < ROW_COUNT; row++) {
-      debouncers[col][row].interval(STABLE_TIME_MS);
-      debouncers[col][row].update();
-      currentMatrix[col][row] = false;
-      debouncedMatrix[col][row] = false;
+    for (int col = 0; col < COLUMN_COUNT; col++) {
+      pinMode(OUTPUT_PINS[col], OUTPUT);
+      digitalWrite(OUTPUT_PINS[col], LOW);
+      for (int row = 0; row < ROW_COUNT; row++) {
+        debouncers[col][row].interval(STABLE_TIME_MS);
+      }
     }
-  }
   
-  // Initialize input pins with internal pull-ups disabled
-  // Matrix is active-high when column is driven high
+  // Initialize input pins with internal pull-downs enabled
+  // Rows are normally LOW, go HIGH when key pressed
   for (int row = 0; row < ROW_COUNT; row++) {
-    pinMode(INPUT_PINS[row], INPUT);
+    pinMode(INPUT_PINS[row], INPUT_PULLDOWN);
   }
   
   Serial.println("Keyboard Matrix Scanner Ready");
+#if !defined(USE_MIDI)
   Serial.print("Matrix size: ");
   Serial.print(COLUMN_COUNT);
   Serial.print("x");
   Serial.print(ROW_COUNT);
   Serial.println(" (columns x rows)");
+#endif
 }
 
 void loop() {
   scanMatrix();
+#if defined(USE_MIDI)
+  while (usbMIDI.read()) {}
+#endif
 }
 
 void scanMatrix() {
@@ -106,13 +112,7 @@ void scanMatrix() {
     delayMicroseconds(10);
     
     for (int row = 0; row < ROW_COUNT; row++) {
-      bool newState = digitalRead(INPUT_PINS[row]) == HIGH;
-      currentMatrix[col][row] = newState;
-      
-      debouncers[col][row].update(newState);
-      
-      if (debouncers[col][row].changed()) {
-        debouncedMatrix[col][row] = debouncers[col][row].read();
+      if (debouncers[col][row].update(digitalRead(INPUT_PINS[row]) == HIGH)) {
         int midiNote = midiNoteMap[col][row];
         if (midiNote > 0) {
           int channel;
@@ -124,23 +124,25 @@ void scanMatrix() {
             channel = 3;
           }
           
-          if (debouncedMatrix[col][row]) {
-            Serial.print("Key Pressed: Col ");
-            Serial.print(col);
-            Serial.print(", Row ");
-            Serial.print(row);
-            Serial.print(" -> MIDI Note ");
-            Serial.println(midiNote);
-            midi.noteOn(channel, midiNote, 127);
-          } else {
-            Serial.print("Key Released: Col ");
-            Serial.print(col);
-            Serial.print(", Row ");
-            Serial.print(row);
-            Serial.print(" -> MIDI Note ");
-            Serial.println(midiNote);
-            midi.noteOff(channel, midiNote, 0);
-          }
+        if (debouncers[col][row].read()) {
+#if defined(USE_MIDI)
+          usbMIDI.sendNoteOn(midiNote, 127, channel);
+#else
+          Serial.print("Note ON: ");
+          Serial.print(midiNote);
+          Serial.print(" Channel: ");
+          Serial.println(channel);
+#endif
+        } else {
+#if defined(USE_MIDI)
+          usbMIDI.sendNoteOff(midiNote, 0, channel);
+#else
+          Serial.print("Note OFF: ");
+          Serial.print(midiNote);
+          Serial.print(" Channel: ");
+          Serial.println(channel);
+#endif
+        }
         }
       }
     }
@@ -153,5 +155,5 @@ bool isKeyPressed(int col, int row) {
   if (col < 0 || col >= COLUMN_COUNT || row < 0 || row >= ROW_COUNT) {
     return false;
   }
-  return debouncedMatrix[col][row];
+  return debouncers[col][row].read();
 }
