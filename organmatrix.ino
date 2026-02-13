@@ -20,6 +20,10 @@ const int STABLE_TIME_MS = 20;  // Time readings must be stable before reporting
 
 const int MIDI_BASE_NOTE = 36;
 
+const int keyboard1_channel = 1;
+const int keyboard2_channel = 2;
+const int pedalboard_channel = 3;
+
 // Lookup table: column, row -> MIDI note number
 const int midiNoteMap[COLUMN_COUNT][ROW_COUNT] = {
   {36, 37, 43, 49, 55, 61, 67, 73, 79, 85, 91},
@@ -117,11 +121,11 @@ void scanMatrix() {
         if (midiNote > 0) {
           int channel;
           if (col >= 0 && col <= 5) {
-            channel = 1;
+            channel = keyboard1_channel;
           } else if (col >= 6 && col <= 11) {
-            channel = 2;
+            channel = keyboard2_channel;
           } else if (col >= 12 && col <= 17) {
-            channel = 3;
+            channel = pedalboard_channel;
           }
           
         if (debouncers[col][row].read()) {
