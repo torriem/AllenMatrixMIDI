@@ -16,7 +16,10 @@
 // Configuration
 const int COLUMN_COUNT = 18;
 const int ROW_COUNT = 11;
-const int STABLE_TIME_MS = 20;  // Time readings must be stable before reporting (2x scan interval)
+const int STABLE_TIME_MS = 20;  // Time readings must be stable before reporting
+
+const int SETTLE_TIME = 15; // microseconds to wait after raising signal high to read
+const int ROW_DELAY = 20; //microseconds to wait before raising the next signal wire high, to let the diode have time to recover
 
 const int MIDI_BASE_NOTE = 36;
 
@@ -113,7 +116,7 @@ void loop() {
 void scanMatrix() {
   for (int col = 0; col < COLUMN_COUNT; col++) {
     digitalWrite(OUTPUT_PINS[col], HIGH);
-    delayMicroseconds(10);
+    delayMicroseconds(SETTLE_TIME);
     
     for (int row = 0; row < ROW_COUNT; row++) {
       if (debouncers[col][row].update(digitalRead(INPUT_PINS[row]) == HIGH)) {
@@ -152,6 +155,7 @@ void scanMatrix() {
     }
     
     digitalWrite(OUTPUT_PINS[col], LOW);
+    delayMicroseconds(ROW_DELAY);
   }
 }
 
