@@ -10,7 +10,7 @@ The input wires are done differently. There are six input wires per keyboard and
 
 This asymmetry between the input wires and the output wire groups means the mapping is a little strange.  See the end of this document for a chart.  You can also see the mapping in the ino file.
 
-Here's a diagram of how an individual keyboard is wired.  Both keyboards are wired like this, but each has its own set of six input wires. The pedal board also has six input wires, but only uses seven output wires.
+Here's a diagram of how an individual keyboard is wired.  Both keyboards are wired like this, but each has its own set of six input wires. The pedal board also has six input wires, but only uses seven output wires.  The OUT wires in the diagram are the eleven black wires going to the keyboard matrix board edge connector.
 
 ![MOSII Keyboard Matrix(organ_keys_schematic.png)](organ_keys_schematic.png)
 
@@ -38,7 +38,7 @@ Looking at the 44-pin MOS Matrix board connector, the connections are:
 | 30     | 14             |
 
 ## Keyboard 1 Read Wires
-The top keyboard matrix is read via six wires, each wire connected to 11 keys.  These are connected left to right to Teensy to pins 2,3,4,5,6,7.  These wires can also be accessed via the 44-pin keyboard matrix edge connector on 22,23,26,25,24, and 21. On our organ these wires are white.
+The top keyboard matrix is read by sending high signals down six wires, each wire connected to 11 keys.  These are connected left to right to Teensy to pins 2,3,4,5,6,7.  These wires can also be accessed via the 44-pin keyboard matrix edge connector on 22,23,26,25,24, and 21. On our organ these wires are white.
 
 | Teensy | MOS Matrix pin |
 | ------ | -------------- |
@@ -50,8 +50,7 @@ The top keyboard matrix is read via six wires, each wire connected to 11 keys.  
 | 7      | 21             |
 
 ## Keyboard 2 Read Wires
-The second keyboard matrix is also read through six wires that connect to Teensy
-'s pins 8,9,10,11,12,and 13.  On our organ these are orange wires and are connected to the edge connector to pins 28, 29, 32, 31, 30, and 27.
+The second keyboard matrix is also read by sending high signals through six wires that connect to Teensy's pins 8,9,10,11,12,and 13.  On our organ these are orange wires and are connected to the edge connector to pins 28, 29, 32, 31, 30, and 27.
 
 | Teensy | MOS Matrix pin |
 | ------ | -------------- |
@@ -63,7 +62,7 @@ The second keyboard matrix is also read through six wires that connect to Teensy
 | 13     | 27             |
 
 ## Pedal Board Read Wires
-The pedal board is read through six wires that connect to Teensy pins 14, 15, 16, 17, 18, and 19.  These wires are blue on our organ and connect to pins 40, 41, 44, 43, 42, and 39 on the 44 pin matrix edge connector.
+The pedal board is read by sending high signals to six wires that connect to Teensy pins 14, 15, 16, 17, 18, and 19.  These wires are blue on our organ and connect to pins 40, 41, 44, 43, 42, and 39 on the 44 pin matrix edge connector. Note that only the first seven of the black read wires are used on the pedal board
 
 | Teensy | MOS Matrix pin |
 | ------ | -------------- |
