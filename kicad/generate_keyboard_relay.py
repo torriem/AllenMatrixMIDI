@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate KiCad 8 project for keyboard matrix switching board.
+Generate KiCad 8 project for keyboard matrix relay switching board.
 
 Switches 29 keyboard matrix lines (from an 11x18 matrix) between a
 built-in computer and an external Teensy 4.1 using 16 DPDT relays.
@@ -20,7 +20,7 @@ Only the 29 used card edge pins are connected. The 15 unused pins
 have no pads/connections on either card edge connector.
 
 Usage: python3 generate_keyboard_switch.py
-Output: keyboard_switch/ directory with KiCad 8 project files
+Output: keyboard_relay/ directory with KiCad 8 project files
 """
 
 import json
@@ -30,7 +30,7 @@ import uuid as _uuid
 # ============================================================
 # Configuration
 # ============================================================
-PROJECT = "keyboard_switch"
+PROJECT = "keyboard_relay"
 OUT = PROJECT
 
 # Card edge: 0.125" pitch, 44 positions (22 per side), double-sided
@@ -164,7 +164,8 @@ for ce_pin in USED_PINS:
     nets.add(f"TEEN_{teensy_pin}")
 
 # Power nets
-nets.add("COIL_12V")
+nets.add("COIL_12V")      # unswitched 12V from screw terminal
+nets.add("COIL_12V_SW")   # switched 12V after external switch jumper
 nets.add("COIL_GND")
 
 # Spare relay channels (32 channels - 29 used = 3 spare)
@@ -181,7 +182,7 @@ def relay_pin_nets(relay_idx):
     ch1 = relay_idx * 2  # 0-based channel index
     ch2 = relay_idx * 2 + 1
 
-    pn = {1: "COIL_12V", 8: "COIL_GND"}
+    pn = {1: "COIL_12V_SW", 8: "COIL_GND"}
 
     # Channel 1: pins 2=COM1, 3=NC1, 4=NO1
     if ch1 < SIGNAL_COUNT:
@@ -191,10 +192,10 @@ def relay_pin_nets(relay_idx):
         pn[3] = f"COMP_{ce_pin}"
         pn[4] = f"TEEN_{teensy_pin}"
     else:
-        sp = ch1 - SIGNAL_COUNT + 1
-        pn[2] = f"SPARE_{sp}"
-        pn[3] = f"SPARE_{sp}"
-        pn[4] = f"SPARE_{sp}"
+        # Unused channel — leave pins unconnected
+        pn[2] = ""
+        pn[3] = ""
+        pn[4] = ""
 
     # Channel 2: pins 7=COM2, 6=NC2, 5=NO2
     if ch2 < SIGNAL_COUNT:
@@ -204,10 +205,10 @@ def relay_pin_nets(relay_idx):
         pn[6] = f"COMP_{ce_pin}"
         pn[5] = f"TEEN_{teensy_pin}"
     else:
-        sp = ch2 - SIGNAL_COUNT + 1
-        pn[7] = f"SPARE_{sp}"
-        pn[6] = f"SPARE_{sp}"
-        pn[5] = f"SPARE_{sp}"
+        # Unused channel — leave pins unconnected
+        pn[7] = ""
+        pn[6] = ""
+        pn[5] = ""
 
     return pn
 
@@ -513,13 +514,18 @@ def header_fp(ref, x, y, rows, cols, pin_nets, pitch=2.54):
     )
 
 
-def screw_terminal_fp(ref, x, y, net1, net2, pitch=5.08):
-    """2-pin screw terminal block."""
+def screw_terminal_fp(ref, x, y, net1, net2, pitch=5.08, label1=None, label2=None):
+    """2-pin screw terminal block with optional per-pin silkscreen labels."""
     pads = [
         thru_pad(1, -pitch / 2, 0, net1, drill=1.2, size=2.4),
         thru_pad(2, pitch / 2, 0, net2, drill=1.2, size=2.4),
     ]
     pad_str = "\n".join(pads)
+    pin_labels = ""
+    if label1:
+        pin_labels += f"\n{fp_text('user_pin1', label1, -pitch / 2, 4, 'F.SilkS', size=0.6)}"
+    if label2:
+        pin_labels += f"\n{fp_text('user_pin2', label2, pitch / 2, 4, 'F.SilkS', size=0.6)}"
     return (
         f'  (footprint "custom:ScrewTerminal_2P"\n'
         f'    (layer "F.Cu")\n'
@@ -529,7 +535,7 @@ def screw_terminal_fp(ref, x, y, net1, net2, pitch=5.08):
         f"{fp_text('Value', '12V_Input', 0, 5, 'F.Fab')}\n"
         f"{fp_rect(-pitch / 2 - 2.5, -3.5, pitch / 2 + 2.5, 3.5, 'F.Fab')}\n"
         f"{fp_rect(-pitch / 2 - 2.5, -3.5, pitch / 2 + 2.5, 3.5, 'F.SilkS')}\n"
-        f"{pad_str}\n"
+        f"{pad_str}{pin_labels}\n"
         f"  )"
     )
 
@@ -549,7 +555,7 @@ def board_outline():
     # Tab dimensions
     total_finger_w = (CE_POS - 1) * CE_PITCH  # 66.675mm
     tab_w = 72.0  # fixed width to match keyboard connector slot
-    tab_h = CE_PAD_H  # tab protrudes by the finger pad length
+    tab_h = CE_PAD_H + 2.0  # tab extends 2mm beyond the finger pads
     chamfer = 1.0  # 45-degree chamfer on leading corners
 
     center_x = BOARD_W / 2
@@ -595,7 +601,7 @@ def generate_pcb():
     ce_center_x = BOARD_W / 2
 
     # Male card edge at bottom edge (y = BOARD_H)
-    footprints.append(card_edge_male_fp(ce_center_x, BOARD_H))
+    footprints.append(card_edge_male_fp(ce_center_x, BOARD_H - 1))
 
     # Female card edge socket at top edge (y ~ 8mm from top)
     footprints.append(card_edge_female_fp(ce_center_x, 4.0))
@@ -640,7 +646,7 @@ def generate_pcb():
     # Placed above the top row of relays, near the screw terminal
     power_y = relay_row1_y - 15.0
     footprints.append(
-        diode_fp("D1", 8.0, power_y, "COIL_12V", "COIL_GND")
+        diode_fp("D1", 8.0, power_y, "COIL_12V_SW", "COIL_GND")
     )
 
     # Teensy 4.1 socket: two 1x24 female headers
@@ -680,7 +686,12 @@ def generate_pcb():
 
     # 12V screw terminal (left side)
     # 12V screw terminal above top row of relays
-    footprints.append(screw_terminal_fp("J5", 8.0, power_y - 10.0, "COIL_12V", "COIL_GND"))
+    # 12V screw terminal (+12V and GND)
+    footprints.append(screw_terminal_fp("+12V", 8.0, power_y - 10.0, "COIL_12V", "COIL_GND", label1="+12V", label2="GND"))
+    # Switch jumper: connects unswitched 12V to switched 12V via external switch
+    footprints.append(screw_terminal_fp("Switch", 20.0, BOARD_H - 15.0, "COIL_12V", "COIL_12V_SW"))
+    # Switched power output jumper (next to +12V input)
+    footprints.append(screw_terminal_fp("12V_SW", 20.0, power_y - 10.0, "COIL_12V_SW", "COIL_GND", label1="+12V", label2="GND"))
 
     fp_str = "\n".join(footprints)
     outline = board_outline()
@@ -1160,6 +1171,7 @@ def generate_project():
             "net_colors": None,
             "netclass_assignments": {
                 "COIL_12V": "Power",
+                "COIL_12V_SW": "Power",
                 "COIL_GND": "Power",
             },
         },
