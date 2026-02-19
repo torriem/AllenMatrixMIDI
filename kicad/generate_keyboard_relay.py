@@ -592,6 +592,52 @@ def board_outline():
     return "\n".join(lines)
 
 
+def edge_keepout(inset=1.5):
+    """Generate trace keepout zones as four rectangular strips along the
+    board extents. Prevents Freerouting from placing traces near edges.
+    """
+    zones = []
+
+    strips = [
+        ("top", [(0, 0), (BOARD_W, 0), (BOARD_W, inset), (0, inset)]),
+        ("bottom", [(0, BOARD_H - inset), (BOARD_W, BOARD_H - inset), (BOARD_W, BOARD_H), (0, BOARD_H)]),
+        ("left", [(0, 0), (inset, 0), (inset, BOARD_H), (0, BOARD_H)]),
+        ("right", [(BOARD_W - inset, 0), (BOARD_W, 0), (BOARD_W, BOARD_H), (BOARD_W - inset, BOARD_H)]),
+    ]
+
+    def pts_str(pts):
+        return " ".join(f"(xy {x:.3f} {y:.3f})" for x, y in pts)
+
+    for name, poly in strips:
+        for layer in ["F.Cu", "B.Cu"]:
+            layer_suffix = "F" if layer == "F.Cu" else "B"
+            zones.append(
+                f"  (zone\n"
+                f"    (net 0)\n"
+                f'    (net_name "")\n'
+                f'    (layer "{layer}")\n'
+                f'    (uuid "{uid()}")\n'
+                f'    (name "keepout_{name}_{layer_suffix}")\n'
+                f"    (hatch edge 0.5)\n"
+                f"    (connect_pads (clearance 0))\n"
+                f"    (min_thickness 0.25)\n"
+                f"    (keepout\n"
+                f"      (tracks not_allowed)\n"
+                f"      (vias not_allowed)\n"
+                f"      (pads allowed)\n"
+                f"      (copperpour not_allowed)\n"
+                f"      (footprints allowed)\n"
+                f"    )\n"
+                f"    (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))\n"
+                f"    (polygon\n"
+                f"      (pts {pts_str(poly)})\n"
+                f"    )\n"
+                f"  )"
+            )
+
+    return "\n".join(zones)
+
+
 # ============================================================
 # Generate PCB file
 # ============================================================
@@ -695,6 +741,7 @@ def generate_pcb():
 
     fp_str = "\n".join(footprints)
     outline = board_outline()
+    keepout = edge_keepout(1.5)
 
     pcb = f"""\
 (kicad_pcb
@@ -772,6 +819,8 @@ def generate_pcb():
 {nets.pcb_defs()}
 
 {outline}
+
+{keepout}
 
 {fp_str}
 
@@ -1121,6 +1170,13 @@ def generate_schematic():
 def generate_project():
     proj = {
         "meta": {"filename": f"{PROJECT}.kicad_pro", "version": 1},
+        "board": {
+            "design_settings": {
+                "rules": {
+                    "min_copper_edge_clearance": 1.0,
+                },
+            },
+        },
         "schematic": {
             "drawing": {},
             "legacy_lib_dir": "",
@@ -1161,7 +1217,7 @@ def generate_project():
                     "name": "Power",
                     "pcb_color": "rgba(0, 0, 0, 0.000)",
                     "schematic_color": "rgba(0, 0, 0, 0.000)",
-                    "track_width": 0.5,
+                    "track_width": 0.6,
                     "via_diameter": 0.8,
                     "via_drill": 0.4,
                     "wire_width": 6,
