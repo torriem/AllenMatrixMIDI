@@ -20,6 +20,7 @@ const int STABLE_TIME_MS = 20;  // Time readings must be stable before reporting
 
 const int SETTLE_TIME = 15; // microseconds to wait after raising signal high to read
 const int ROW_DELAY = 20; //microseconds to wait before raising the next signal wire high, to let the diode have time to recover
+const int DELAY_TIME = 250; //microseconds to wait between scanning runs
 
 const int MIDI_BASE_NOTE = 36;
 
@@ -76,22 +77,29 @@ protected:
     return currentState;
   }
 };
-MatrixDebouncer debouncers[COLUMN_COUNT][ROW_COUNT];
+MatrixDebouncer (*debouncers)[ROW_COUNT] = nullptr;
 
 // Tracking variables
 unsigned long lastScanTime = 0;
 
 void setup() {
   Serial.begin(9600);
-  
+
+  // Allocate debouncer array on the heap to avoid stack overflow
+  debouncers = new MatrixDebouncer[COLUMN_COUNT][ROW_COUNT];
+  if (!debouncers) {
+    Serial.println("ERROR: Failed to allocate debouncers");
+    while (1) { delay(1000); }
+  }
+
   // Initialize output pins (all low initially)
-    for (int col = 0; col < COLUMN_COUNT; col++) {
-      pinMode(OUTPUT_PINS[col], OUTPUT);
-      digitalWrite(OUTPUT_PINS[col], LOW);
-      for (int row = 0; row < ROW_COUNT; row++) {
-        debouncers[col][row].interval(STABLE_TIME_MS);
-      }
+  for (int col = 0; col < COLUMN_COUNT; col++) {
+    pinMode(OUTPUT_PINS[col], OUTPUT);
+    digitalWrite(OUTPUT_PINS[col], LOW);
+    for (int row = 0; row < ROW_COUNT; row++) {
+      debouncers[col][row].interval(STABLE_TIME_MS);
     }
+  }
   
   // Initialize input pins with internal pull-downs enabled
   // Rows are normally LOW, go HIGH when key pressed
@@ -100,7 +108,35 @@ void setup() {
   }
   
   Serial.println("Keyboard Matrix Scanner Ready");
-#if !defined(USE_MIDI)
+#if defined(USE_MIDI)
+  // Wait for USB to be ready (up to 3 seconds)
+  unsigned long usbWaitStart = millis();
+  while (!usb_configuration && (millis() - usbWaitStart < 3000)) {
+    delay(10);
+  }
+
+  if (usb_configuration) {
+    // Send note-off for all mapped notes to ensure clean state
+    // Flush every column to avoid overflowing the USB send buffer
+    for (int col = 0; col < COLUMN_COUNT; col++) {
+      for (int row = 0; row < ROW_COUNT; row++) {
+        int midiNote = midiNoteMap[col][row];
+        if (midiNote > 0) {
+          int channel;
+          if (col <= 5) {
+            channel = keyboard1_channel;
+          } else if (col <= 11) {
+            channel = keyboard2_channel;
+          } else {
+            channel = pedalboard_channel;
+          }
+          usbMIDI.sendNoteOff(midiNote, 0, channel);
+        }
+      }
+      usbMIDI.send_now();
+    }
+  }
+#else
   Serial.print("Matrix size: ");
   Serial.print(COLUMN_COUNT);
   Serial.print("x");
@@ -114,6 +150,7 @@ void loop() {
 #if defined(USE_MIDI)
   while (usbMIDI.read()) {}
 #endif
+  delayMicroseconds(DELAY_TIME);
 }
 
 void scanMatrix() {
@@ -126,33 +163,37 @@ void scanMatrix() {
         int midiNote = midiNoteMap[col][row];
         if (midiNote > 0) {
           int channel;
-          if (col >= 0 && col <= 5) {
+          if (col <= 5) {
             channel = keyboard1_channel;
-          } else if (col >= 6 && col <= 11) {
+          } else if (col <= 11) {
             channel = keyboard2_channel;
-          } else if (col >= 12 && col <= 17) {
+          } else {
             channel = pedalboard_channel;
           }
-          
-        if (debouncers[col][row].read()) {
+
+          if (debouncers[col][row].read()) {
 #if defined(USE_MIDI)
-          usbMIDI.sendNoteOn(midiNote, 127, channel);
+            if (usb_configuration) {
+              usbMIDI.sendNoteOn(midiNote, 127, channel);
+            }
 #else
-          Serial.print("Note ON: ");
-          Serial.print(midiNote);
-          Serial.print(" Channel: ");
-          Serial.println(channel);
+            Serial.print("Note ON: ");
+            Serial.print(midiNote);
+            Serial.print(" Channel: ");
+            Serial.println(channel);
 #endif
-        } else {
+          } else {
 #if defined(USE_MIDI)
-          usbMIDI.sendNoteOff(midiNote, 0, channel);
+            if (usb_configuration) {
+              usbMIDI.sendNoteOff(midiNote, 0, channel);
+            }
 #else
-          Serial.print("Note OFF: ");
-          Serial.print(midiNote);
-          Serial.print(" Channel: ");
-          Serial.println(channel);
+            Serial.print("Note OFF: ");
+            Serial.print(midiNote);
+            Serial.print(" Channel: ");
+            Serial.println(channel);
 #endif
-        }
+          }
         }
       }
     }
