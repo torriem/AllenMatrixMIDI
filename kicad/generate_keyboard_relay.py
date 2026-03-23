@@ -178,37 +178,41 @@ for i in range(1, SPARE_COUNT + 1):
 # Relay channel -> signal mapping
 # ============================================================
 def relay_pin_nets(relay_idx):
-    """Return dict of pin_number -> net_name for relay relay_idx (0-based)."""
+    """Return dict of pin_number -> net_name for relay relay_idx (0-based).
+
+    HK19F pin numbering:
+      A1=Coil+, A2=Coil-
+      11=COM1, 12=NC1, 14=NO1
+      21=COM2, 22=NC2, 24=NO2
+    """
     ch1 = relay_idx * 2  # 0-based channel index
     ch2 = relay_idx * 2 + 1
 
-    pn = {1: "COIL_12V_SW", 8: "COIL_GND"}
+    pn = {"A1": "COIL_12V_SW", "A2": "COIL_GND"}
 
-    # Channel 1: pins 2=COM1, 3=NC1, 4=NO1
+    # Channel 1: 11=COM1, 12=NC1, 14=NO1
     if ch1 < SIGNAL_COUNT:
         ce_pin = USED_PINS[ch1]
         teensy_pin = CE_TO_TEENSY[ce_pin]
-        pn[2] = f"KB_{ce_pin}"
-        pn[3] = f"COMP_{ce_pin}"
-        pn[4] = f"TEEN_{teensy_pin}"
+        pn["11"] = f"KB_{ce_pin}"
+        pn["12"] = f"COMP_{ce_pin}"
+        pn["14"] = f"TEEN_{teensy_pin}"
     else:
-        # Unused channel — leave pins unconnected
-        pn[2] = ""
-        pn[3] = ""
-        pn[4] = ""
+        pn["11"] = ""
+        pn["12"] = ""
+        pn["14"] = ""
 
-    # Channel 2: pins 7=COM2, 6=NC2, 5=NO2
+    # Channel 2: 21=COM2, 22=NC2, 24=NO2
     if ch2 < SIGNAL_COUNT:
         ce_pin = USED_PINS[ch2]
         teensy_pin = CE_TO_TEENSY[ce_pin]
-        pn[7] = f"KB_{ce_pin}"
-        pn[6] = f"COMP_{ce_pin}"
-        pn[5] = f"TEEN_{teensy_pin}"
+        pn["21"] = f"KB_{ce_pin}"
+        pn["22"] = f"COMP_{ce_pin}"
+        pn["24"] = f"TEEN_{teensy_pin}"
     else:
-        # Unused channel — leave pins unconnected
-        pn[7] = ""
-        pn[6] = ""
-        pn[5] = ""
+        pn["21"] = ""
+        pn["22"] = ""
+        pn["24"] = ""
 
     return pn
 
@@ -403,10 +407,10 @@ def card_edge_female_fp(x, y):
 def relay_fp(ref, x, y, pin_nets):
     """HK19F-12V DPDT relay footprint.
 
-    Pin mapping:
-      1=Coil+, 8=Coil-
-      2=COM1, 3=NC1, 4=NO1
-      7=COM2, 6=NC2, 5=NO2
+    Pin mapping (HK19F standard):
+      A1=Coil+, A2=Coil-
+      11=COM1, 12=NC1, 14=NO1
+      21=COM2, 22=NC2, 24=NO2
 
     HK19F pin spacing (centered vertically):
       0.3" between rows, 0.3" coil-to-signal gap, 0.2" between signal pins.
@@ -414,17 +418,17 @@ def relay_fp(ref, x, y, pin_nets):
     """
     # Y positions centered: total span = COIL_GAP + 2*SIG_PITCH = 17.78mm
     total_h = RELAY_COIL_GAP + 2 * RELAY_SIG_PITCH
-    y_top = -total_h / 2  # pin 1 / pin 8 y position
+    y_top = -total_h / 2
 
     pin_pos = {
-        1: (-RELAY_ROW_SPACING / 2, y_top),
-        2: (-RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP),
-        3: (-RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + RELAY_SIG_PITCH),
-        4: (-RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + 2 * RELAY_SIG_PITCH),
-        5: (RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + 2 * RELAY_SIG_PITCH),
-        6: (RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + RELAY_SIG_PITCH),
-        7: (RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP),
-        8: (RELAY_ROW_SPACING / 2, y_top),
+        "A1": (-RELAY_ROW_SPACING / 2, y_top),
+        "11": (-RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP),
+        "12": (-RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + RELAY_SIG_PITCH),
+        "14": (-RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + 2 * RELAY_SIG_PITCH),
+        "24": (RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + 2 * RELAY_SIG_PITCH),
+        "22": (RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP + RELAY_SIG_PITCH),
+        "21": (RELAY_ROW_SPACING / 2, y_top + RELAY_COIL_GAP),
+        "A2": (RELAY_ROW_SPACING / 2, y_top),
     }
 
     pads = []
@@ -837,76 +841,138 @@ def generate_schematic():
 
     lib_syms = []
 
-    # DPDT Relay symbol
+    # HK19F DPDT relay symbol (matches KiCad standard Relay library)
+    # Pins: A1=Coil+, A2=Coil-, 11=COM1, 12=NC1, 14=NO1, 21=COM2, 22=NC2, 24=NO2
+    # Pin positions: coil pins top/bottom at x=-10.16, signal pins top/bottom
     lib_syms.append(f"""\
-    (symbol "custom:Relay_DPDT"
-      (pin_names (offset 1.016))
+    (symbol "Relay:HK19F-DCxxV-SHC"
+      (exclude_from_sim no)
       (in_bom yes)
       (on_board yes)
       (property "Reference" "K"
-        (at 0 10.16 0)
-        (effects (font (size 1.27 1.27)))
+        (at 16.51 3.81 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "Relay_DPDT"
-        (at 0 -10.16 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "HK19F-DCxxV-SHC"
+        (at 16.51 1.27 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "custom:Relay_DPDT_DIP8"
-        (at 0 0 0)
+      (property "Footprint" "Relay_THT:Relay_DPDT_Finder_30.22"
+        (at -17.78 -12.7 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810201512_Ningbo-Keke-New-Era-Appliance-HK19F-DC12V-SHG_C42803.pdf"
+        (at 0 -17.78 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" ""
-        (at 0 0 0)
+      (property "Description" "HuiKe 19F monostable relay, DPDT, 1A"
+        (at 1.27 -15.24 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Relay_DPDT_0_1"
+      (symbol "HK19F-DCxxV-SHC_0_1"
         (rectangle
-          (start -5.08 8.89)
-          (end 5.08 -8.89)
-          (stroke (width 0) (type default))
+          (start -15.24 5.08)
+          (end 15.24 -5.08)
+          (stroke (width 0.254) (type default))
           (fill (type background))
         )
+        (rectangle
+          (start -13.335 1.905)
+          (end -6.985 -1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline (pts (xy -12.7 -1.905) (xy -7.62 1.905))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -10.16 5.08) (xy -10.16 1.905))
+          (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy -10.16 -5.08) (xy -10.16 -1.905))
+          (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy -6.985 0) (xy -6.35 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -5.715 0) (xy -5.08 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -4.445 0) (xy -3.81 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -3.175 0) (xy -2.54 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -2.54 5.08) (xy -2.54 2.54) (xy -1.905 3.175) (xy -2.54 3.81))
+          (stroke (width 0) (type default)) (fill (type outline)))
+        (polyline (pts (xy -1.905 0) (xy -1.27 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -0.635 0) (xy 0 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 -2.54) (xy -1.905 3.81))
+          (stroke (width 0.508) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 -2.54) (xy 0 -5.08))
+          (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0.635 0) (xy 1.27 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 1.905 0) (xy 2.54 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 2.54 5.08) (xy 2.54 2.54) (xy 1.905 3.175) (xy 2.54 3.81))
+          (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 3.175 0) (xy 3.81 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 4.445 0) (xy 5.08 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 5.715 0) (xy 6.35 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 6.985 0) (xy 7.62 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 7.62 5.08) (xy 7.62 2.54) (xy 8.255 3.175) (xy 7.62 3.81))
+          (stroke (width 0) (type default)) (fill (type outline)))
+        (polyline (pts (xy 8.255 0) (xy 8.89 0))
+          (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 10.16 -2.54) (xy 8.255 3.81))
+          (stroke (width 0.508) (type default)) (fill (type none)))
+        (polyline (pts (xy 10.16 -2.54) (xy 10.16 -5.08))
+          (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 12.7 5.08) (xy 12.7 2.54) (xy 12.065 3.175) (xy 12.7 3.81))
+          (stroke (width 0) (type default)) (fill (type none)))
       )
-      (symbol "Relay_DPDT_1_1"
-        (pin passive line (at -7.62 6.35 0) (length 2.54)
-          (name "Coil+" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
+      (symbol "HK19F-DCxxV-SHC_1_1"
+        (pin passive line (at -10.16 7.62 270) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "A1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -7.62 3.81 0) (length 2.54)
-          (name "COM1" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
+        (pin passive line (at -10.16 -7.62 90) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "A2" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 3.81 180) (length 2.54)
-          (name "NC1" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
+        (pin passive line (at -2.54 7.62 270) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "12" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 1.27 180) (length 2.54)
-          (name "NO1" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 0 -7.62 90) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "11" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 -1.27 180) (length 2.54)
-          (name "NO2" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 2.54 7.62 270) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "14" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 -3.81 180) (length 2.54)
-          (name "NC2" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 7.62 7.62 270) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "22" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -7.62 -3.81 0) (length 2.54)
-          (name "COM2" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 10.16 -7.62 90) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "21" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -7.62 -6.35 0) (length 2.54)
-          (name "Coil-" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 12.7 7.62 270) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "24" (effects (font (size 1.27 1.27))))
         )
       )
     )""")
 
-    # 1N4148 diode symbol
+    # 1N4148 diode symbol (matches KiCad standard Diode library)
     lib_syms.append(f"""\
-    (symbol "custom:D_1N4148"
-      (pin_names (offset 1.016))
+    (symbol "Diode:1N4148"
+      (pin_numbers (hide yes))
+      (pin_names (hide yes))
+      (exclude_from_sim no)
       (in_bom yes)
       (on_board yes)
       (property "Reference" "D"
@@ -917,34 +983,43 @@ def generate_schematic():
         (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "custom:D_DO35_Horizontal"
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
         (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" ""
+      (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
         (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "D_1N4148_0_1"
+      (property "Description" "100V 0.15A standard switching diode, DO-35"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "1N4148_0_1"
         (polyline
           (pts (xy -1.27 1.27) (xy -1.27 -1.27))
           (stroke (width 0.254) (type default))
           (fill (type none))
         )
         (polyline
-          (pts (xy 1.27 0) (xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0))
+          (pts (xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27))
           (stroke (width 0.254) (type default))
           (fill (type none))
         )
+        (polyline
+          (pts (xy 1.27 0) (xy -1.27 0))
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
       )
-      (symbol "D_1N4148_1_1"
+      (symbol "1N4148_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "A" (effects (font (size 1.27 1.27))))
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 3.81 0 180) (length 2.54)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "K" (effects (font (size 1.27 1.27))))
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )""")
@@ -1010,7 +1085,8 @@ def generate_schematic():
 
     root_uuid = uid()
 
-    def place_symbol(lib_id, ref, value, x, y, pin_labels):
+    def place_symbol(lib_id, ref, value, x, y, pin_labels, angle=0):
+        full_lib_id = lib_id if ':' in lib_id else f'custom:{lib_id}'
         pin_lines = []
         for pnum in pin_labels:
             pin_lines.append(f'    (pin "{pnum}" (uuid "{uid()}"))')
@@ -1018,8 +1094,8 @@ def generate_schematic():
 
         inst = f'''\
   (symbol
-    (lib_id "custom:{lib_id}")
-    (at {x:.2f} {y:.2f} 0)
+    (lib_id "{full_lib_id}")
+    (at {x:.2f} {y:.2f} {angle})
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -1088,9 +1164,9 @@ def generate_schematic():
 
     # Place 16 relays in 4 columns x 4 rows
     sch_relay_x_start = 80
-    sch_relay_y_start = 40
+    sch_relay_y_start = 50
     sch_relay_x_sp = 55
-    sch_relay_y_sp = 30
+    sch_relay_y_sp = 45
 
     for i in range(RELAY_COUNT):
         col = i % 4
@@ -1099,30 +1175,37 @@ def generate_schematic():
         sy = sch_relay_y_start + row * sch_relay_y_sp
         pn = relay_pin_nets(i)
 
+        # HK19F rotated 90° CW (angle=270) in KiCad schematic coords:
+        # pin offsets transform (x, y) → (y, x)
+        # Original pin connection points (from symbol definition):
+        #   A1: (-10.16, 7.62)  A2: (-10.16, -7.62)
+        #   12: (-2.54,  7.62)  11: (0, -7.62)  14: (2.54, 7.62)
+        #   22: (7.62,   7.62)  21: (10.16, -7.62)  24: (12.7, 7.62)
         pin_labels = {
-            "1": (pn[1], -7.62, 6.35),
-            "2": (pn[2], -7.62, 3.81),
-            "3": (pn[3], 7.62, 3.81),
-            "4": (pn[4], 7.62, 1.27),
-            "5": (pn[5], 7.62, -1.27),
-            "6": (pn[6], 7.62, -3.81),
-            "7": (pn[7], -7.62, -3.81),
-            "8": (pn[8], -7.62, -6.35),
+            "A1": (pn["A1"], 7.62, -10.16),
+            "A2": (pn["A2"], -7.62, -10.16),
+            "12": (pn["12"], 7.62, -2.54),
+            "11": (pn["11"], -7.62, 0),
+            "14": (pn["14"], 7.62, 2.54),
+            "22": (pn["22"], 7.62, 7.62),
+            "21": (pn["21"], -7.62, 10.16),
+            "24": (pn["24"], 7.62, 12.7),
         }
-        place_symbol("Relay_DPDT", f"K{i + 1}", "DPDT_12V", sx, sy, pin_labels)
+        place_symbol("Relay:HK19F-DCxxV-SHC", f"K{i + 1}", "HK19F-DC12V", sx, sy, pin_labels, angle=270)
 
-    # Place 16 diodes near their relays
-    for i in range(RELAY_COUNT):
-        col = i % 4
-        row = i // 4
-        sx = sch_relay_x_start + col * sch_relay_x_sp
-        sy = sch_relay_y_start + row * sch_relay_y_sp + 15
-
-        pin_labels = {
-            "A": ("COIL_GND", -3.81, 0),
-            "K": ("COIL_12V", 3.81, 0),
-        }
-        place_symbol("D_1N4148", f"D{i + 1}", "1N4148", sx, sy, pin_labels)
+    # Single flyback diode across all relay coils (driven in parallel)
+    # Pin 1 = K (cathode) at left, Pin 2 = A (anode) at right
+    place_symbol(
+        "Diode:1N4148",
+        "D1",
+        "1N4148",
+        sch_relay_x_start,
+        sch_relay_y_start + 4 * sch_relay_y_sp + 10,
+        {
+            "1": ("COIL_12V_SW", -3.81, 0),
+            "2": ("COIL_GND", 3.81, 0),
+        },
+    )
 
     # Place power connector
     place_symbol(

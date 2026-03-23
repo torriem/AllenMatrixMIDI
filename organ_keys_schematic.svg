@@ -1,0 +1,5910 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="11in"
+   height="2.5in"
+   viewBox="0 0 1056 240"
+   version="1.1"
+   id="svg383"
+   sodipodi:docname="organ_keys_schematic.svg"
+   inkscape:export-filename="organ_keys_schematic.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs383" />
+  <sodipodi:namedview
+     id="namedview383"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.54059454"
+     inkscape:cx="944.33066"
+     inkscape:cy="340.366"
+     inkscape:window-width="2259"
+     inkscape:window-height="1209"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg383"
+     inkscape:document-units="in" />
+  <title
+     id="title1">61-Key Organ Switch Matrix Schematic</title>
+  <rect
+     width="953.97571"
+     height="136.77071"
+     fill="#ffffff"
+     id="rect1"
+     x="41.546986"
+     y="49.983513"
+     style="stroke-width:0.341927" />
+  <g
+     id="input-bus-lines"
+     inkscape:label="Input Bus Lines"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <line
+       x1="20"
+       y1="10"
+       x2="2760"
+       y2="10"
+       stroke="#e6194b"
+       stroke-width="2"
+       id="line1" />
+    <text
+       x="15"
+       y="14"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#e6194b"
+       font-weight="bold"
+       id="text1">IN1</text>
+    <line
+       x1="20"
+       y1="22"
+       x2="2760"
+       y2="22"
+       stroke="#3cb44b"
+       stroke-width="2"
+       id="line2" />
+    <text
+       x="15"
+       y="26"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#3cb44b"
+       font-weight="bold"
+       id="text2">IN2</text>
+    <line
+       x1="20"
+       y1="34"
+       x2="2760"
+       y2="34"
+       stroke="#4363d8"
+       stroke-width="2"
+       id="line3" />
+    <text
+       x="15"
+       y="38"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#4363d8"
+       font-weight="bold"
+       id="text3">IN3</text>
+    <line
+       x1="20"
+       y1="46"
+       x2="2760"
+       y2="46"
+       stroke="#f58231"
+       stroke-width="2"
+       id="line4" />
+    <text
+       x="15"
+       y="50"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#f58231"
+       font-weight="bold"
+       id="text4">IN4</text>
+    <line
+       x1="20"
+       y1="58"
+       x2="2760"
+       y2="58"
+       stroke="#911eb4"
+       stroke-width="2"
+       id="line5" />
+    <text
+       x="15"
+       y="62"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#911eb4"
+       font-weight="bold"
+       id="text5">IN5</text>
+    <line
+       x1="20"
+       y1="70"
+       x2="2760"
+       y2="70"
+       stroke="#42d4f4"
+       stroke-width="2"
+       id="line6" />
+    <text
+       x="15"
+       y="74"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#42d4f4"
+       font-weight="bold"
+       id="text6">IN6</text>
+  </g>
+  <g
+     id="key-1-C2"
+     inkscape:label="C2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="45"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text7">C2</text>
+    <circle
+       cx="45"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle7" />
+    <line
+       x1="45"
+       y1="10"
+       x2="45"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line7" />
+    <line
+       x1="45"
+       y1="115"
+       x2="45"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line8" />
+    <circle
+       cx="45"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle8" />
+    <circle
+       cx="45"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle9" />
+    <line
+       x1="45"
+       y1="135"
+       x2="53"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line9" />
+    <line
+       x1="45"
+       y1="170"
+       x2="45"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line10" />
+    <polygon
+       points="45,209 37,185 53,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon10" />
+    <line
+       x1="37"
+       y1="209"
+       x2="53"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line11" />
+    <line
+       x1="45"
+       y1="215"
+       x2="45"
+       y2="255"
+       stroke="#800000"
+       stroke-width="1.2"
+       id="line12" />
+    <circle
+       cx="45"
+       cy="255"
+       r="2.5"
+       fill="#800000"
+       id="circle12" />
+  </g>
+  <g
+     id="key-2-C#2"
+     inkscape:label="C#2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="90"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text12">C#2</text>
+    <circle
+       cx="90"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle13" />
+    <line
+       x1="90"
+       y1="22"
+       x2="90"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line13" />
+    <line
+       x1="90"
+       y1="115"
+       x2="90"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line14" />
+    <circle
+       cx="90"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle14" />
+    <circle
+       cx="90"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle15" />
+    <line
+       x1="90"
+       y1="135"
+       x2="98"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line15" />
+    <line
+       x1="90"
+       y1="170"
+       x2="90"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line16" />
+    <polygon
+       points="90,209 82,185 98,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon16" />
+    <line
+       x1="82"
+       y1="209"
+       x2="98"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line17" />
+    <line
+       x1="90"
+       y1="215"
+       x2="90"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line18" />
+    <circle
+       cx="90"
+       cy="267"
+       r="2.5"
+       fill="#e6194b"
+       id="circle18" />
+  </g>
+  <g
+     id="key-3-D2"
+     inkscape:label="D2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="135"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text18">D2</text>
+    <circle
+       cx="135"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle19" />
+    <line
+       x1="135"
+       y1="34"
+       x2="135"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line19" />
+    <line
+       x1="135"
+       y1="115"
+       x2="135"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line20" />
+    <circle
+       cx="135"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle20" />
+    <circle
+       cx="135"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle21" />
+    <line
+       x1="135"
+       y1="135"
+       x2="143"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line21" />
+    <line
+       x1="135"
+       y1="170"
+       x2="135"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line22" />
+    <polygon
+       points="135,209 127,185 143,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon22" />
+    <line
+       x1="127"
+       y1="209"
+       x2="143"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line23" />
+    <line
+       x1="135"
+       y1="215"
+       x2="135"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line24" />
+    <circle
+       cx="135"
+       cy="267"
+       r="2.5"
+       fill="#e6194b"
+       id="circle24" />
+  </g>
+  <g
+     id="key-4-D#2"
+     inkscape:label="D#2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="180"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text24">D#2</text>
+    <circle
+       cx="180"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle25" />
+    <line
+       x1="180"
+       y1="46"
+       x2="180"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line25" />
+    <line
+       x1="180"
+       y1="115"
+       x2="180"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line26" />
+    <circle
+       cx="180"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle26" />
+    <circle
+       cx="180"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle27" />
+    <line
+       x1="180"
+       y1="135"
+       x2="188"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line27" />
+    <line
+       x1="180"
+       y1="170"
+       x2="180"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line28" />
+    <polygon
+       points="180,209 172,185 188,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon28" />
+    <line
+       x1="172"
+       y1="209"
+       x2="188"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line29" />
+    <line
+       x1="180"
+       y1="215"
+       x2="180"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line30" />
+    <circle
+       cx="180"
+       cy="267"
+       r="2.5"
+       fill="#e6194b"
+       id="circle30" />
+  </g>
+  <g
+     id="key-5-E2"
+     inkscape:label="E2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="225"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text30">E2</text>
+    <circle
+       cx="225"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle31" />
+    <line
+       x1="225"
+       y1="58"
+       x2="225"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line31" />
+    <line
+       x1="225"
+       y1="115"
+       x2="225"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line32" />
+    <circle
+       cx="225"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle32" />
+    <circle
+       cx="225"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle33" />
+    <line
+       x1="225"
+       y1="135"
+       x2="233"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line33" />
+    <line
+       x1="225"
+       y1="170"
+       x2="225"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line34" />
+    <polygon
+       points="225,209 217,185 233,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon34" />
+    <line
+       x1="217"
+       y1="209"
+       x2="233"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line35" />
+    <line
+       x1="225"
+       y1="215"
+       x2="225"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line36" />
+    <circle
+       cx="225"
+       cy="267"
+       r="2.5"
+       fill="#e6194b"
+       id="circle36" />
+  </g>
+  <g
+     id="key-6-F2"
+     inkscape:label="F2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="270"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text36">F2</text>
+    <circle
+       cx="270"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle37" />
+    <line
+       x1="270"
+       y1="70"
+       x2="270"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line37" />
+    <line
+       x1="270"
+       y1="115"
+       x2="270"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line38" />
+    <circle
+       cx="270"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle38" />
+    <circle
+       cx="270"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle39" />
+    <line
+       x1="270"
+       y1="135"
+       x2="278"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line39" />
+    <line
+       x1="270"
+       y1="170"
+       x2="270"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line40" />
+    <polygon
+       points="270,209 262,185 278,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon40" />
+    <line
+       x1="262"
+       y1="209"
+       x2="278"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line41" />
+    <line
+       x1="270"
+       y1="215"
+       x2="270"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line42" />
+    <circle
+       cx="270"
+       cy="267"
+       r="2.5"
+       fill="#e6194b"
+       id="circle42" />
+  </g>
+  <g
+     id="key-7-F#2"
+     inkscape:label="F#2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="315"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text42">F#2</text>
+    <circle
+       cx="315"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle43" />
+    <line
+       x1="315"
+       y1="10"
+       x2="315"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line43" />
+    <line
+       x1="315"
+       y1="115"
+       x2="315"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line44" />
+    <circle
+       cx="315"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle44" />
+    <circle
+       cx="315"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle45" />
+    <line
+       x1="315"
+       y1="135"
+       x2="323"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line45" />
+    <line
+       x1="315"
+       y1="170"
+       x2="315"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line46" />
+    <polygon
+       points="315,209 307,185 323,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon46" />
+    <line
+       x1="307"
+       y1="209"
+       x2="323"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line47" />
+    <line
+       x1="315"
+       y1="215"
+       x2="315"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line48" />
+    <circle
+       cx="315"
+       cy="267"
+       r="2.5"
+       fill="#e6194b"
+       id="circle48" />
+  </g>
+  <g
+     id="key-8-G2"
+     inkscape:label="G2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="360"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text48">G2</text>
+    <circle
+       cx="360"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle49" />
+    <line
+       x1="360"
+       y1="22"
+       x2="360"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line49" />
+    <line
+       x1="360"
+       y1="115"
+       x2="360"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line50" />
+    <circle
+       cx="360"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle50" />
+    <circle
+       cx="360"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle51" />
+    <line
+       x1="360"
+       y1="135"
+       x2="368"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line51" />
+    <line
+       x1="360"
+       y1="170"
+       x2="360"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line52" />
+    <polygon
+       points="360,209 352,185 368,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon52" />
+    <line
+       x1="352"
+       y1="209"
+       x2="368"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line53" />
+    <line
+       x1="360"
+       y1="215"
+       x2="360"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line54" />
+    <circle
+       cx="360"
+       cy="279"
+       r="2.5"
+       fill="#f58231"
+       id="circle54" />
+  </g>
+  <g
+     id="key-9-G#2"
+     inkscape:label="G#2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="405"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text54">G#2</text>
+    <circle
+       cx="405"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle55" />
+    <line
+       x1="405"
+       y1="34"
+       x2="405"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line55" />
+    <line
+       x1="405"
+       y1="115"
+       x2="405"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line56" />
+    <circle
+       cx="405"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle56" />
+    <circle
+       cx="405"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle57" />
+    <line
+       x1="405"
+       y1="135"
+       x2="413"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line57" />
+    <line
+       x1="405"
+       y1="170"
+       x2="405"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line58" />
+    <polygon
+       points="405,209 397,185 413,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon58" />
+    <line
+       x1="397"
+       y1="209"
+       x2="413"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line59" />
+    <line
+       x1="405"
+       y1="215"
+       x2="405"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line60" />
+    <circle
+       cx="405"
+       cy="279"
+       r="2.5"
+       fill="#f58231"
+       id="circle60" />
+  </g>
+  <g
+     id="key-10-A2"
+     inkscape:label="A2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="450"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text60">A2</text>
+    <circle
+       cx="450"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle61" />
+    <line
+       x1="450"
+       y1="46"
+       x2="450"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line61" />
+    <line
+       x1="450"
+       y1="115"
+       x2="450"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line62" />
+    <circle
+       cx="450"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle62" />
+    <circle
+       cx="450"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle63" />
+    <line
+       x1="450"
+       y1="135"
+       x2="458"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line63" />
+    <line
+       x1="450"
+       y1="170"
+       x2="450"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line64" />
+    <polygon
+       points="450,209 442,185 458,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon64" />
+    <line
+       x1="442"
+       y1="209"
+       x2="458"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line65" />
+    <line
+       x1="450"
+       y1="215"
+       x2="450"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line66" />
+    <circle
+       cx="450"
+       cy="279"
+       r="2.5"
+       fill="#f58231"
+       id="circle66" />
+  </g>
+  <g
+     id="key-11-A#2"
+     inkscape:label="A#2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="495"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text66">A#2</text>
+    <circle
+       cx="495"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle67" />
+    <line
+       x1="495"
+       y1="58"
+       x2="495"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line67" />
+    <line
+       x1="495"
+       y1="115"
+       x2="495"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line68" />
+    <circle
+       cx="495"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle68" />
+    <circle
+       cx="495"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle69" />
+    <line
+       x1="495"
+       y1="135"
+       x2="503"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line69" />
+    <line
+       x1="495"
+       y1="170"
+       x2="495"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line70" />
+    <polygon
+       points="495,209 487,185 503,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon70" />
+    <line
+       x1="487"
+       y1="209"
+       x2="503"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line71" />
+    <line
+       x1="495"
+       y1="215"
+       x2="495"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line72" />
+    <circle
+       cx="495"
+       cy="279"
+       r="2.5"
+       fill="#f58231"
+       id="circle72" />
+  </g>
+  <g
+     id="key-12-B2"
+     inkscape:label="B2"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="540"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text72">B2</text>
+    <circle
+       cx="540"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle73" />
+    <line
+       x1="540"
+       y1="70"
+       x2="540"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line73" />
+    <line
+       x1="540"
+       y1="115"
+       x2="540"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line74" />
+    <circle
+       cx="540"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle74" />
+    <circle
+       cx="540"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle75" />
+    <line
+       x1="540"
+       y1="135"
+       x2="548"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line75" />
+    <line
+       x1="540"
+       y1="170"
+       x2="540"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line76" />
+    <polygon
+       points="540,209 532,185 548,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon76" />
+    <line
+       x1="532"
+       y1="209"
+       x2="548"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line77" />
+    <line
+       x1="540"
+       y1="215"
+       x2="540"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line78" />
+    <circle
+       cx="540"
+       cy="279"
+       r="2.5"
+       fill="#f58231"
+       id="circle78" />
+  </g>
+  <g
+     id="key-13-C3"
+     inkscape:label="C3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="585"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text78">C3</text>
+    <circle
+       cx="585"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle79" />
+    <line
+       x1="585"
+       y1="10"
+       x2="585"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line79" />
+    <line
+       x1="585"
+       y1="115"
+       x2="585"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line80" />
+    <circle
+       cx="585"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle80" />
+    <circle
+       cx="585"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle81" />
+    <line
+       x1="585"
+       y1="135"
+       x2="593"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line81" />
+    <line
+       x1="585"
+       y1="170"
+       x2="585"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line82" />
+    <polygon
+       points="585,209 577,185 593,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon82" />
+    <line
+       x1="577"
+       y1="209"
+       x2="593"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line83" />
+    <line
+       x1="585"
+       y1="215"
+       x2="585"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line84" />
+    <circle
+       cx="585"
+       cy="279"
+       r="2.5"
+       fill="#f58231"
+       id="circle84" />
+  </g>
+  <g
+     id="key-14-C#3"
+     inkscape:label="C#3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="630"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text84">C#3</text>
+    <circle
+       cx="630"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle85" />
+    <line
+       x1="630"
+       y1="22"
+       x2="630"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line85" />
+    <line
+       x1="630"
+       y1="115"
+       x2="630"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line86" />
+    <circle
+       cx="630"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle86" />
+    <circle
+       cx="630"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle87" />
+    <line
+       x1="630"
+       y1="135"
+       x2="638"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line87" />
+    <line
+       x1="630"
+       y1="170"
+       x2="630"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line88" />
+    <polygon
+       points="630,209 622,185 638,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon88" />
+    <line
+       x1="622"
+       y1="209"
+       x2="638"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line89" />
+    <line
+       x1="630"
+       y1="215"
+       x2="630"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="1.2"
+       id="line90" />
+    <circle
+       cx="630"
+       cy="291"
+       r="2.5"
+       fill="#bfef45"
+       id="circle90" />
+  </g>
+  <g
+     id="key-15-D3"
+     inkscape:label="D3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="675"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text90">D3</text>
+    <circle
+       cx="675"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle91" />
+    <line
+       x1="675"
+       y1="34"
+       x2="675"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line91" />
+    <line
+       x1="675"
+       y1="115"
+       x2="675"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line92" />
+    <circle
+       cx="675"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle92" />
+    <circle
+       cx="675"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle93" />
+    <line
+       x1="675"
+       y1="135"
+       x2="683"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line93" />
+    <line
+       x1="675"
+       y1="170"
+       x2="675"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line94" />
+    <polygon
+       points="675,209 667,185 683,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon94" />
+    <line
+       x1="667"
+       y1="209"
+       x2="683"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line95" />
+    <line
+       x1="675"
+       y1="215"
+       x2="675"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="1.2"
+       id="line96" />
+    <circle
+       cx="675"
+       cy="291"
+       r="2.5"
+       fill="#bfef45"
+       id="circle96" />
+  </g>
+  <g
+     id="key-16-D#3"
+     inkscape:label="D#3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="720"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text96">D#3</text>
+    <circle
+       cx="720"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle97" />
+    <line
+       x1="720"
+       y1="46"
+       x2="720"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line97" />
+    <line
+       x1="720"
+       y1="115"
+       x2="720"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line98" />
+    <circle
+       cx="720"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle98" />
+    <circle
+       cx="720"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle99" />
+    <line
+       x1="720"
+       y1="135"
+       x2="728"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line99" />
+    <line
+       x1="720"
+       y1="170"
+       x2="720"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line100" />
+    <polygon
+       points="720,209 712,185 728,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon100" />
+    <line
+       x1="712"
+       y1="209"
+       x2="728"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line101" />
+    <line
+       x1="720"
+       y1="215"
+       x2="720"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="1.2"
+       id="line102" />
+    <circle
+       cx="720"
+       cy="291"
+       r="2.5"
+       fill="#bfef45"
+       id="circle102" />
+  </g>
+  <g
+     id="key-17-E3"
+     inkscape:label="E3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="765"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text102">E3</text>
+    <circle
+       cx="765"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle103" />
+    <line
+       x1="765"
+       y1="58"
+       x2="765"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line103" />
+    <line
+       x1="765"
+       y1="115"
+       x2="765"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line104" />
+    <circle
+       cx="765"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle104" />
+    <circle
+       cx="765"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle105" />
+    <line
+       x1="765"
+       y1="135"
+       x2="773"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line105" />
+    <line
+       x1="765"
+       y1="170"
+       x2="765"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line106" />
+    <polygon
+       points="765,209 757,185 773,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon106" />
+    <line
+       x1="757"
+       y1="209"
+       x2="773"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line107" />
+    <line
+       x1="765"
+       y1="215"
+       x2="765"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="1.2"
+       id="line108" />
+    <circle
+       cx="765"
+       cy="291"
+       r="2.5"
+       fill="#bfef45"
+       id="circle108" />
+  </g>
+  <g
+     id="key-18-F3"
+     inkscape:label="F3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="810"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text108">F3</text>
+    <circle
+       cx="810"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle109" />
+    <line
+       x1="810"
+       y1="70"
+       x2="810"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line109" />
+    <line
+       x1="810"
+       y1="115"
+       x2="810"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line110" />
+    <circle
+       cx="810"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle110" />
+    <circle
+       cx="810"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle111" />
+    <line
+       x1="810"
+       y1="135"
+       x2="818"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line111" />
+    <line
+       x1="810"
+       y1="170"
+       x2="810"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line112" />
+    <polygon
+       points="810,209 802,185 818,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon112" />
+    <line
+       x1="802"
+       y1="209"
+       x2="818"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line113" />
+    <line
+       x1="810"
+       y1="215"
+       x2="810"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="1.2"
+       id="line114" />
+    <circle
+       cx="810"
+       cy="291"
+       r="2.5"
+       fill="#bfef45"
+       id="circle114" />
+  </g>
+  <g
+     id="key-19-F#3"
+     inkscape:label="F#3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="855"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text114">F#3</text>
+    <circle
+       cx="855"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle115" />
+    <line
+       x1="855"
+       y1="10"
+       x2="855"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line115" />
+    <line
+       x1="855"
+       y1="115"
+       x2="855"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line116" />
+    <circle
+       cx="855"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle116" />
+    <circle
+       cx="855"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle117" />
+    <line
+       x1="855"
+       y1="135"
+       x2="863"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line117" />
+    <line
+       x1="855"
+       y1="170"
+       x2="855"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line118" />
+    <polygon
+       points="855,209 847,185 863,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon118" />
+    <line
+       x1="847"
+       y1="209"
+       x2="863"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line119" />
+    <line
+       x1="855"
+       y1="215"
+       x2="855"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="1.2"
+       id="line120" />
+    <circle
+       cx="855"
+       cy="291"
+       r="2.5"
+       fill="#bfef45"
+       id="circle120" />
+  </g>
+  <g
+     id="key-20-G3"
+     inkscape:label="G3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="900"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text120">G3</text>
+    <circle
+       cx="900"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle121" />
+    <line
+       x1="900"
+       y1="22"
+       x2="900"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line121" />
+    <line
+       x1="900"
+       y1="115"
+       x2="900"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line122" />
+    <circle
+       cx="900"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle122" />
+    <circle
+       cx="900"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle123" />
+    <line
+       x1="900"
+       y1="135"
+       x2="908"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line123" />
+    <line
+       x1="900"
+       y1="170"
+       x2="900"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line124" />
+    <polygon
+       points="900,209 892,185 908,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon124" />
+    <line
+       x1="892"
+       y1="209"
+       x2="908"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line125" />
+    <line
+       x1="900"
+       y1="215"
+       x2="900"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line126" />
+    <circle
+       cx="900"
+       cy="303"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle126" />
+  </g>
+  <g
+     id="key-21-G#3"
+     inkscape:label="G#3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="945"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text126">G#3</text>
+    <circle
+       cx="945"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle127" />
+    <line
+       x1="945"
+       y1="34"
+       x2="945"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line127" />
+    <line
+       x1="945"
+       y1="115"
+       x2="945"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line128" />
+    <circle
+       cx="945"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle128" />
+    <circle
+       cx="945"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle129" />
+    <line
+       x1="945"
+       y1="135"
+       x2="953"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line129" />
+    <line
+       x1="945"
+       y1="170"
+       x2="945"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line130" />
+    <polygon
+       points="945,209 937,185 953,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon130" />
+    <line
+       x1="937"
+       y1="209"
+       x2="953"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line131" />
+    <line
+       x1="945"
+       y1="215"
+       x2="945"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line132" />
+    <circle
+       cx="945"
+       cy="303"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle132" />
+  </g>
+  <g
+     id="key-22-A3"
+     inkscape:label="A3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="990"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text132">A3</text>
+    <circle
+       cx="990"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle133" />
+    <line
+       x1="990"
+       y1="46"
+       x2="990"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line133" />
+    <line
+       x1="990"
+       y1="115"
+       x2="990"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line134" />
+    <circle
+       cx="990"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle134" />
+    <circle
+       cx="990"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle135" />
+    <line
+       x1="990"
+       y1="135"
+       x2="998"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line135" />
+    <line
+       x1="990"
+       y1="170"
+       x2="990"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line136" />
+    <polygon
+       points="990,209 982,185 998,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon136" />
+    <line
+       x1="982"
+       y1="209"
+       x2="998"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line137" />
+    <line
+       x1="990"
+       y1="215"
+       x2="990"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line138" />
+    <circle
+       cx="990"
+       cy="303"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle138" />
+  </g>
+  <g
+     id="key-23-A#3"
+     inkscape:label="A#3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1035"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text138">A#3</text>
+    <circle
+       cx="1035"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle139" />
+    <line
+       x1="1035"
+       y1="58"
+       x2="1035"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line139" />
+    <line
+       x1="1035"
+       y1="115"
+       x2="1035"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line140" />
+    <circle
+       cx="1035"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle140" />
+    <circle
+       cx="1035"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle141" />
+    <line
+       x1="1035"
+       y1="135"
+       x2="1043"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line141" />
+    <line
+       x1="1035"
+       y1="170"
+       x2="1035"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line142" />
+    <polygon
+       points="1035,209 1027,185 1043,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon142" />
+    <line
+       x1="1027"
+       y1="209"
+       x2="1043"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line143" />
+    <line
+       x1="1035"
+       y1="215"
+       x2="1035"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line144" />
+    <circle
+       cx="1035"
+       cy="303"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle144" />
+  </g>
+  <g
+     id="key-24-B3"
+     inkscape:label="B3"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1080"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text144">B3</text>
+    <circle
+       cx="1080"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle145" />
+    <line
+       x1="1080"
+       y1="70"
+       x2="1080"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line145" />
+    <line
+       x1="1080"
+       y1="115"
+       x2="1080"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line146" />
+    <circle
+       cx="1080"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle146" />
+    <circle
+       cx="1080"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle147" />
+    <line
+       x1="1080"
+       y1="135"
+       x2="1088"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line147" />
+    <line
+       x1="1080"
+       y1="170"
+       x2="1080"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line148" />
+    <polygon
+       points="1080,209 1072,185 1088,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon148" />
+    <line
+       x1="1072"
+       y1="209"
+       x2="1088"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line149" />
+    <line
+       x1="1080"
+       y1="215"
+       x2="1080"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line150" />
+    <circle
+       cx="1080"
+       cy="303"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle150" />
+  </g>
+  <g
+     id="key-25-C4"
+     inkscape:label="C4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1125"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text150">C4</text>
+    <circle
+       cx="1125"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle151" />
+    <line
+       x1="1125"
+       y1="10"
+       x2="1125"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line151" />
+    <line
+       x1="1125"
+       y1="115"
+       x2="1125"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line152" />
+    <circle
+       cx="1125"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle152" />
+    <circle
+       cx="1125"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle153" />
+    <line
+       x1="1125"
+       y1="135"
+       x2="1133"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line153" />
+    <line
+       x1="1125"
+       y1="170"
+       x2="1125"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line154" />
+    <polygon
+       points="1125,209 1117,185 1133,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon154" />
+    <line
+       x1="1117"
+       y1="209"
+       x2="1133"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line155" />
+    <line
+       x1="1125"
+       y1="215"
+       x2="1125"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line156" />
+    <circle
+       cx="1125"
+       cy="303"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle156" />
+  </g>
+  <g
+     id="key-26-C#4"
+     inkscape:label="C#4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1170"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text156">C#4</text>
+    <circle
+       cx="1170"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle157" />
+    <line
+       x1="1170"
+       y1="22"
+       x2="1170"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line157" />
+    <line
+       x1="1170"
+       y1="115"
+       x2="1170"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line158" />
+    <circle
+       cx="1170"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle158" />
+    <circle
+       cx="1170"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle159" />
+    <line
+       x1="1170"
+       y1="135"
+       x2="1178"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line159" />
+    <line
+       x1="1170"
+       y1="170"
+       x2="1170"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line160" />
+    <polygon
+       points="1170,209 1162,185 1178,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon160" />
+    <line
+       x1="1162"
+       y1="209"
+       x2="1178"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line161" />
+    <line
+       x1="1170"
+       y1="215"
+       x2="1170"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line162" />
+    <circle
+       cx="1170"
+       cy="315"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle162" />
+  </g>
+  <g
+     id="key-27-D4"
+     inkscape:label="D4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1215"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text162">D4</text>
+    <circle
+       cx="1215"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle163" />
+    <line
+       x1="1215"
+       y1="34"
+       x2="1215"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line163" />
+    <line
+       x1="1215"
+       y1="115"
+       x2="1215"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line164" />
+    <circle
+       cx="1215"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle164" />
+    <circle
+       cx="1215"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle165" />
+    <line
+       x1="1215"
+       y1="135"
+       x2="1223"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line165" />
+    <line
+       x1="1215"
+       y1="170"
+       x2="1215"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line166" />
+    <polygon
+       points="1215,209 1207,185 1223,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon166" />
+    <line
+       x1="1207"
+       y1="209"
+       x2="1223"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line167" />
+    <line
+       x1="1215"
+       y1="215"
+       x2="1215"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line168" />
+    <circle
+       cx="1215"
+       cy="315"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle168" />
+  </g>
+  <g
+     id="key-28-D#4"
+     inkscape:label="D#4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1260"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text168">D#4</text>
+    <circle
+       cx="1260"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle169" />
+    <line
+       x1="1260"
+       y1="46"
+       x2="1260"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line169" />
+    <line
+       x1="1260"
+       y1="115"
+       x2="1260"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line170" />
+    <circle
+       cx="1260"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle170" />
+    <circle
+       cx="1260"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle171" />
+    <line
+       x1="1260"
+       y1="135"
+       x2="1268"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line171" />
+    <line
+       x1="1260"
+       y1="170"
+       x2="1260"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line172" />
+    <polygon
+       points="1260,209 1252,185 1268,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon172" />
+    <line
+       x1="1252"
+       y1="209"
+       x2="1268"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line173" />
+    <line
+       x1="1260"
+       y1="215"
+       x2="1260"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line174" />
+    <circle
+       cx="1260"
+       cy="315"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle174" />
+  </g>
+  <g
+     id="key-29-E4"
+     inkscape:label="E4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1305"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text174">E4</text>
+    <circle
+       cx="1305"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle175" />
+    <line
+       x1="1305"
+       y1="58"
+       x2="1305"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line175" />
+    <line
+       x1="1305"
+       y1="115"
+       x2="1305"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line176" />
+    <circle
+       cx="1305"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle176" />
+    <circle
+       cx="1305"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle177" />
+    <line
+       x1="1305"
+       y1="135"
+       x2="1313"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line177" />
+    <line
+       x1="1305"
+       y1="170"
+       x2="1305"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line178" />
+    <polygon
+       points="1305,209 1297,185 1313,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon178" />
+    <line
+       x1="1297"
+       y1="209"
+       x2="1313"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line179" />
+    <line
+       x1="1305"
+       y1="215"
+       x2="1305"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line180" />
+    <circle
+       cx="1305"
+       cy="315"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle180" />
+  </g>
+  <g
+     id="key-30-F4"
+     inkscape:label="F4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1350"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text180">F4</text>
+    <circle
+       cx="1350"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle181" />
+    <line
+       x1="1350"
+       y1="70"
+       x2="1350"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line181" />
+    <line
+       x1="1350"
+       y1="115"
+       x2="1350"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line182" />
+    <circle
+       cx="1350"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle182" />
+    <circle
+       cx="1350"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle183" />
+    <line
+       x1="1350"
+       y1="135"
+       x2="1358"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line183" />
+    <line
+       x1="1350"
+       y1="170"
+       x2="1350"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line184" />
+    <polygon
+       points="1350,209 1342,185 1358,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon184" />
+    <line
+       x1="1342"
+       y1="209"
+       x2="1358"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line185" />
+    <line
+       x1="1350"
+       y1="215"
+       x2="1350"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line186" />
+    <circle
+       cx="1350"
+       cy="315"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle186" />
+  </g>
+  <g
+     id="key-31-F#4"
+     inkscape:label="F#4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1395"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text186">F#4</text>
+    <circle
+       cx="1395"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle187" />
+    <line
+       x1="1395"
+       y1="10"
+       x2="1395"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line187" />
+    <line
+       x1="1395"
+       y1="115"
+       x2="1395"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line188" />
+    <circle
+       cx="1395"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle188" />
+    <circle
+       cx="1395"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle189" />
+    <line
+       x1="1395"
+       y1="135"
+       x2="1403"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line189" />
+    <line
+       x1="1395"
+       y1="170"
+       x2="1395"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line190" />
+    <polygon
+       points="1395,209 1387,185 1403,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon190" />
+    <line
+       x1="1387"
+       y1="209"
+       x2="1403"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line191" />
+    <line
+       x1="1395"
+       y1="215"
+       x2="1395"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line192" />
+    <circle
+       cx="1395"
+       cy="315"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle192" />
+  </g>
+  <g
+     id="key-32-G4"
+     inkscape:label="G4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1440"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text192">G4</text>
+    <circle
+       cx="1440"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle193" />
+    <line
+       x1="1440"
+       y1="22"
+       x2="1440"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line193" />
+    <line
+       x1="1440"
+       y1="115"
+       x2="1440"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line194" />
+    <circle
+       cx="1440"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle194" />
+    <circle
+       cx="1440"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle195" />
+    <line
+       x1="1440"
+       y1="135"
+       x2="1448"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line195" />
+    <line
+       x1="1440"
+       y1="170"
+       x2="1440"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line196" />
+    <polygon
+       points="1440,209 1432,185 1448,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon196" />
+    <line
+       x1="1432"
+       y1="209"
+       x2="1448"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line197" />
+    <line
+       x1="1440"
+       y1="215"
+       x2="1440"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line198" />
+    <circle
+       cx="1440"
+       cy="327"
+       r="2.5"
+       fill="#4363d8"
+       id="circle198" />
+  </g>
+  <g
+     id="key-33-G#4"
+     inkscape:label="G#4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1485"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text198">G#4</text>
+    <circle
+       cx="1485"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle199" />
+    <line
+       x1="1485"
+       y1="34"
+       x2="1485"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line199" />
+    <line
+       x1="1485"
+       y1="115"
+       x2="1485"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line200" />
+    <circle
+       cx="1485"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle200" />
+    <circle
+       cx="1485"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle201" />
+    <line
+       x1="1485"
+       y1="135"
+       x2="1493"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line201" />
+    <line
+       x1="1485"
+       y1="170"
+       x2="1485"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line202" />
+    <polygon
+       points="1485,209 1477,185 1493,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon202" />
+    <line
+       x1="1477"
+       y1="209"
+       x2="1493"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line203" />
+    <line
+       x1="1485"
+       y1="215"
+       x2="1485"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line204" />
+    <circle
+       cx="1485"
+       cy="327"
+       r="2.5"
+       fill="#4363d8"
+       id="circle204" />
+  </g>
+  <g
+     id="key-34-A4"
+     inkscape:label="A4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1530"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text204">A4</text>
+    <circle
+       cx="1530"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle205" />
+    <line
+       x1="1530"
+       y1="46"
+       x2="1530"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line205" />
+    <line
+       x1="1530"
+       y1="115"
+       x2="1530"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line206" />
+    <circle
+       cx="1530"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle206" />
+    <circle
+       cx="1530"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle207" />
+    <line
+       x1="1530"
+       y1="135"
+       x2="1538"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line207" />
+    <line
+       x1="1530"
+       y1="170"
+       x2="1530"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line208" />
+    <polygon
+       points="1530,209 1522,185 1538,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon208" />
+    <line
+       x1="1522"
+       y1="209"
+       x2="1538"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line209" />
+    <line
+       x1="1530"
+       y1="215"
+       x2="1530"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line210" />
+    <circle
+       cx="1530"
+       cy="327"
+       r="2.5"
+       fill="#4363d8"
+       id="circle210" />
+  </g>
+  <g
+     id="key-35-A#4"
+     inkscape:label="A#4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1575"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text210">A#4</text>
+    <circle
+       cx="1575"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle211" />
+    <line
+       x1="1575"
+       y1="58"
+       x2="1575"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line211" />
+    <line
+       x1="1575"
+       y1="115"
+       x2="1575"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line212" />
+    <circle
+       cx="1575"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle212" />
+    <circle
+       cx="1575"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle213" />
+    <line
+       x1="1575"
+       y1="135"
+       x2="1583"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line213" />
+    <line
+       x1="1575"
+       y1="170"
+       x2="1575"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line214" />
+    <polygon
+       points="1575,209 1567,185 1583,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon214" />
+    <line
+       x1="1567"
+       y1="209"
+       x2="1583"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line215" />
+    <line
+       x1="1575"
+       y1="215"
+       x2="1575"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line216" />
+    <circle
+       cx="1575"
+       cy="327"
+       r="2.5"
+       fill="#4363d8"
+       id="circle216" />
+  </g>
+  <g
+     id="key-36-B4"
+     inkscape:label="B4"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1620"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text216">B4</text>
+    <circle
+       cx="1620"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle217" />
+    <line
+       x1="1620"
+       y1="70"
+       x2="1620"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line217" />
+    <line
+       x1="1620"
+       y1="115"
+       x2="1620"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line218" />
+    <circle
+       cx="1620"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle218" />
+    <circle
+       cx="1620"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle219" />
+    <line
+       x1="1620"
+       y1="135"
+       x2="1628"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line219" />
+    <line
+       x1="1620"
+       y1="170"
+       x2="1620"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line220" />
+    <polygon
+       points="1620,209 1612,185 1628,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon220" />
+    <line
+       x1="1612"
+       y1="209"
+       x2="1628"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line221" />
+    <line
+       x1="1620"
+       y1="215"
+       x2="1620"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line222" />
+    <circle
+       cx="1620"
+       cy="327"
+       r="2.5"
+       fill="#4363d8"
+       id="circle222" />
+  </g>
+  <g
+     id="key-37-C5"
+     inkscape:label="C5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1665"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text222">C5</text>
+    <circle
+       cx="1665"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle223" />
+    <line
+       x1="1665"
+       y1="10"
+       x2="1665"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line223" />
+    <line
+       x1="1665"
+       y1="115"
+       x2="1665"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line224" />
+    <circle
+       cx="1665"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle224" />
+    <circle
+       cx="1665"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle225" />
+    <line
+       x1="1665"
+       y1="135"
+       x2="1673"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line225" />
+    <line
+       x1="1665"
+       y1="170"
+       x2="1665"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line226" />
+    <polygon
+       points="1665,209 1657,185 1673,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon226" />
+    <line
+       x1="1657"
+       y1="209"
+       x2="1673"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line227" />
+    <line
+       x1="1665"
+       y1="215"
+       x2="1665"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line228" />
+    <circle
+       cx="1665"
+       cy="327"
+       r="2.5"
+       fill="#4363d8"
+       id="circle228" />
+  </g>
+  <g
+     id="key-38-C#5"
+     inkscape:label="C#5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1710"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text228">C#5</text>
+    <circle
+       cx="1710"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle229" />
+    <line
+       x1="1710"
+       y1="22"
+       x2="1710"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line229" />
+    <line
+       x1="1710"
+       y1="115"
+       x2="1710"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line230" />
+    <circle
+       cx="1710"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle230" />
+    <circle
+       cx="1710"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle231" />
+    <line
+       x1="1710"
+       y1="135"
+       x2="1718"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line231" />
+    <line
+       x1="1710"
+       y1="170"
+       x2="1710"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line232" />
+    <polygon
+       points="1710,209 1702,185 1718,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon232" />
+    <line
+       x1="1702"
+       y1="209"
+       x2="1718"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line233" />
+    <line
+       x1="1710"
+       y1="215"
+       x2="1710"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line234" />
+    <circle
+       cx="1710"
+       cy="339"
+       r="2.5"
+       fill="#911eb4"
+       id="circle234" />
+  </g>
+  <g
+     id="key-39-D5"
+     inkscape:label="D5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1755"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text234">D5</text>
+    <circle
+       cx="1755"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle235" />
+    <line
+       x1="1755"
+       y1="34"
+       x2="1755"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line235" />
+    <line
+       x1="1755"
+       y1="115"
+       x2="1755"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line236" />
+    <circle
+       cx="1755"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle236" />
+    <circle
+       cx="1755"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle237" />
+    <line
+       x1="1755"
+       y1="135"
+       x2="1763"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line237" />
+    <line
+       x1="1755"
+       y1="170"
+       x2="1755"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line238" />
+    <polygon
+       points="1755,209 1747,185 1763,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon238" />
+    <line
+       x1="1747"
+       y1="209"
+       x2="1763"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line239" />
+    <line
+       x1="1755"
+       y1="215"
+       x2="1755"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line240" />
+    <circle
+       cx="1755"
+       cy="339"
+       r="2.5"
+       fill="#911eb4"
+       id="circle240" />
+  </g>
+  <g
+     id="key-40-D#5"
+     inkscape:label="D#5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1800"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text240">D#5</text>
+    <circle
+       cx="1800"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle241" />
+    <line
+       x1="1800"
+       y1="46"
+       x2="1800"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line241" />
+    <line
+       x1="1800"
+       y1="115"
+       x2="1800"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line242" />
+    <circle
+       cx="1800"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle242" />
+    <circle
+       cx="1800"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle243" />
+    <line
+       x1="1800"
+       y1="135"
+       x2="1808"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line243" />
+    <line
+       x1="1800"
+       y1="170"
+       x2="1800"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line244" />
+    <polygon
+       points="1800,209 1792,185 1808,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon244" />
+    <line
+       x1="1792"
+       y1="209"
+       x2="1808"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line245" />
+    <line
+       x1="1800"
+       y1="215"
+       x2="1800"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line246" />
+    <circle
+       cx="1800"
+       cy="339"
+       r="2.5"
+       fill="#911eb4"
+       id="circle246" />
+  </g>
+  <g
+     id="key-41-E5"
+     inkscape:label="E5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1845"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text246">E5</text>
+    <circle
+       cx="1845"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle247" />
+    <line
+       x1="1845"
+       y1="58"
+       x2="1845"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line247" />
+    <line
+       x1="1845"
+       y1="115"
+       x2="1845"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line248" />
+    <circle
+       cx="1845"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle248" />
+    <circle
+       cx="1845"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle249" />
+    <line
+       x1="1845"
+       y1="135"
+       x2="1853"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line249" />
+    <line
+       x1="1845"
+       y1="170"
+       x2="1845"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line250" />
+    <polygon
+       points="1845,209 1837,185 1853,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon250" />
+    <line
+       x1="1837"
+       y1="209"
+       x2="1853"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line251" />
+    <line
+       x1="1845"
+       y1="215"
+       x2="1845"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line252" />
+    <circle
+       cx="1845"
+       cy="339"
+       r="2.5"
+       fill="#911eb4"
+       id="circle252" />
+  </g>
+  <g
+     id="key-42-F5"
+     inkscape:label="F5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1890"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text252">F5</text>
+    <circle
+       cx="1890"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle253" />
+    <line
+       x1="1890"
+       y1="70"
+       x2="1890"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line253" />
+    <line
+       x1="1890"
+       y1="115"
+       x2="1890"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line254" />
+    <circle
+       cx="1890"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle254" />
+    <circle
+       cx="1890"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle255" />
+    <line
+       x1="1890"
+       y1="135"
+       x2="1898"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line255" />
+    <line
+       x1="1890"
+       y1="170"
+       x2="1890"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line256" />
+    <polygon
+       points="1890,209 1882,185 1898,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon256" />
+    <line
+       x1="1882"
+       y1="209"
+       x2="1898"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line257" />
+    <line
+       x1="1890"
+       y1="215"
+       x2="1890"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line258" />
+    <circle
+       cx="1890"
+       cy="339"
+       r="2.5"
+       fill="#911eb4"
+       id="circle258" />
+  </g>
+  <g
+     id="key-43-F#5"
+     inkscape:label="F#5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1935"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text258">F#5</text>
+    <circle
+       cx="1935"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle259" />
+    <line
+       x1="1935"
+       y1="10"
+       x2="1935"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line259" />
+    <line
+       x1="1935"
+       y1="115"
+       x2="1935"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line260" />
+    <circle
+       cx="1935"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle260" />
+    <circle
+       cx="1935"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle261" />
+    <line
+       x1="1935"
+       y1="135"
+       x2="1943"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line261" />
+    <line
+       x1="1935"
+       y1="170"
+       x2="1935"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line262" />
+    <polygon
+       points="1935,209 1927,185 1943,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon262" />
+    <line
+       x1="1927"
+       y1="209"
+       x2="1943"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line263" />
+    <line
+       x1="1935"
+       y1="215"
+       x2="1935"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line264" />
+    <circle
+       cx="1935"
+       cy="339"
+       r="2.5"
+       fill="#911eb4"
+       id="circle264" />
+  </g>
+  <g
+     id="key-44-G5"
+     inkscape:label="G5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="1980"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text264">G5</text>
+    <circle
+       cx="1980"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle265" />
+    <line
+       x1="1980"
+       y1="22"
+       x2="1980"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line265" />
+    <line
+       x1="1980"
+       y1="115"
+       x2="1980"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line266" />
+    <circle
+       cx="1980"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle266" />
+    <circle
+       cx="1980"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle267" />
+    <line
+       x1="1980"
+       y1="135"
+       x2="1988"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line267" />
+    <line
+       x1="1980"
+       y1="170"
+       x2="1980"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line268" />
+    <polygon
+       points="1980,209 1972,185 1988,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon268" />
+    <line
+       x1="1972"
+       y1="209"
+       x2="1988"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line269" />
+    <line
+       x1="1980"
+       y1="215"
+       x2="1980"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="1.2"
+       id="line270" />
+    <circle
+       cx="1980"
+       cy="351"
+       r="2.5"
+       fill="#f032e6"
+       id="circle270" />
+  </g>
+  <g
+     id="key-45-G#5"
+     inkscape:label="G#5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2025"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text270">G#5</text>
+    <circle
+       cx="2025"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle271" />
+    <line
+       x1="2025"
+       y1="34"
+       x2="2025"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line271" />
+    <line
+       x1="2025"
+       y1="115"
+       x2="2025"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line272" />
+    <circle
+       cx="2025"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle272" />
+    <circle
+       cx="2025"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle273" />
+    <line
+       x1="2025"
+       y1="135"
+       x2="2033"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line273" />
+    <line
+       x1="2025"
+       y1="170"
+       x2="2025"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line274" />
+    <polygon
+       points="2025,209 2017,185 2033,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon274" />
+    <line
+       x1="2017"
+       y1="209"
+       x2="2033"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line275" />
+    <line
+       x1="2025"
+       y1="215"
+       x2="2025"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="1.2"
+       id="line276" />
+    <circle
+       cx="2025"
+       cy="351"
+       r="2.5"
+       fill="#f032e6"
+       id="circle276" />
+  </g>
+  <g
+     id="key-46-A5"
+     inkscape:label="A5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2070"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text276">A5</text>
+    <circle
+       cx="2070"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle277" />
+    <line
+       x1="2070"
+       y1="46"
+       x2="2070"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line277" />
+    <line
+       x1="2070"
+       y1="115"
+       x2="2070"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line278" />
+    <circle
+       cx="2070"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle278" />
+    <circle
+       cx="2070"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle279" />
+    <line
+       x1="2070"
+       y1="135"
+       x2="2078"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line279" />
+    <line
+       x1="2070"
+       y1="170"
+       x2="2070"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line280" />
+    <polygon
+       points="2070,209 2062,185 2078,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon280" />
+    <line
+       x1="2062"
+       y1="209"
+       x2="2078"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line281" />
+    <line
+       x1="2070"
+       y1="215"
+       x2="2070"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="1.2"
+       id="line282" />
+    <circle
+       cx="2070"
+       cy="351"
+       r="2.5"
+       fill="#f032e6"
+       id="circle282" />
+  </g>
+  <g
+     id="key-47-A#5"
+     inkscape:label="A#5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2115"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text282">A#5</text>
+    <circle
+       cx="2115"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle283" />
+    <line
+       x1="2115"
+       y1="58"
+       x2="2115"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line283" />
+    <line
+       x1="2115"
+       y1="115"
+       x2="2115"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line284" />
+    <circle
+       cx="2115"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle284" />
+    <circle
+       cx="2115"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle285" />
+    <line
+       x1="2115"
+       y1="135"
+       x2="2123"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line285" />
+    <line
+       x1="2115"
+       y1="170"
+       x2="2115"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line286" />
+    <polygon
+       points="2115,209 2107,185 2123,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon286" />
+    <line
+       x1="2107"
+       y1="209"
+       x2="2123"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line287" />
+    <line
+       x1="2115"
+       y1="215"
+       x2="2115"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="1.2"
+       id="line288" />
+    <circle
+       cx="2115"
+       cy="351"
+       r="2.5"
+       fill="#f032e6"
+       id="circle288" />
+  </g>
+  <g
+     id="key-48-B5"
+     inkscape:label="B5"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2160"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text288">B5</text>
+    <circle
+       cx="2160"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle289" />
+    <line
+       x1="2160"
+       y1="70"
+       x2="2160"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line289" />
+    <line
+       x1="2160"
+       y1="115"
+       x2="2160"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line290" />
+    <circle
+       cx="2160"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle290" />
+    <circle
+       cx="2160"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle291" />
+    <line
+       x1="2160"
+       y1="135"
+       x2="2168"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line291" />
+    <line
+       x1="2160"
+       y1="170"
+       x2="2160"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line292" />
+    <polygon
+       points="2160,209 2152,185 2168,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon292" />
+    <line
+       x1="2152"
+       y1="209"
+       x2="2168"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line293" />
+    <line
+       x1="2160"
+       y1="215"
+       x2="2160"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="1.2"
+       id="line294" />
+    <circle
+       cx="2160"
+       cy="351"
+       r="2.5"
+       fill="#f032e6"
+       id="circle294" />
+  </g>
+  <g
+     id="key-49-C6"
+     inkscape:label="C6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2205"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text294">C6</text>
+    <circle
+       cx="2205"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle295" />
+    <line
+       x1="2205"
+       y1="10"
+       x2="2205"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line295" />
+    <line
+       x1="2205"
+       y1="115"
+       x2="2205"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line296" />
+    <circle
+       cx="2205"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle296" />
+    <circle
+       cx="2205"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle297" />
+    <line
+       x1="2205"
+       y1="135"
+       x2="2213"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line297" />
+    <line
+       x1="2205"
+       y1="170"
+       x2="2205"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line298" />
+    <polygon
+       points="2205,209 2197,185 2213,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon298" />
+    <line
+       x1="2197"
+       y1="209"
+       x2="2213"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line299" />
+    <line
+       x1="2205"
+       y1="215"
+       x2="2205"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="1.2"
+       id="line300" />
+    <circle
+       cx="2205"
+       cy="351"
+       r="2.5"
+       fill="#f032e6"
+       id="circle300" />
+  </g>
+  <g
+     id="key-50-C#6"
+     inkscape:label="C#6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2250"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text300">C#6</text>
+    <circle
+       cx="2250"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle301" />
+    <line
+       x1="2250"
+       y1="22"
+       x2="2250"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line301" />
+    <line
+       x1="2250"
+       y1="115"
+       x2="2250"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line302" />
+    <circle
+       cx="2250"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle302" />
+    <circle
+       cx="2250"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle303" />
+    <line
+       x1="2250"
+       y1="135"
+       x2="2258"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line303" />
+    <line
+       x1="2250"
+       y1="170"
+       x2="2250"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line304" />
+    <polygon
+       points="2250,209 2242,185 2258,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon304" />
+    <line
+       x1="2242"
+       y1="209"
+       x2="2258"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line305" />
+    <line
+       x1="2250"
+       y1="215"
+       x2="2250"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="1.2"
+       id="line306" />
+    <circle
+       cx="2250"
+       cy="363"
+       r="2.5"
+       fill="#a9a9a9"
+       id="circle306" />
+  </g>
+  <g
+     id="key-51-D6"
+     inkscape:label="D6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2295"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text306">D6</text>
+    <circle
+       cx="2295"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle307" />
+    <line
+       x1="2295"
+       y1="34"
+       x2="2295"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line307" />
+    <line
+       x1="2295"
+       y1="115"
+       x2="2295"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line308" />
+    <circle
+       cx="2295"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle308" />
+    <circle
+       cx="2295"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle309" />
+    <line
+       x1="2295"
+       y1="135"
+       x2="2303"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line309" />
+    <line
+       x1="2295"
+       y1="170"
+       x2="2295"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line310" />
+    <polygon
+       points="2295,209 2287,185 2303,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon310" />
+    <line
+       x1="2287"
+       y1="209"
+       x2="2303"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line311" />
+    <line
+       x1="2295"
+       y1="215"
+       x2="2295"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="1.2"
+       id="line312" />
+    <circle
+       cx="2295"
+       cy="363"
+       r="2.5"
+       fill="#a9a9a9"
+       id="circle312" />
+  </g>
+  <g
+     id="key-52-D#6"
+     inkscape:label="D#6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2340"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text312">D#6</text>
+    <circle
+       cx="2340"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle313" />
+    <line
+       x1="2340"
+       y1="46"
+       x2="2340"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line313" />
+    <line
+       x1="2340"
+       y1="115"
+       x2="2340"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line314" />
+    <circle
+       cx="2340"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle314" />
+    <circle
+       cx="2340"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle315" />
+    <line
+       x1="2340"
+       y1="135"
+       x2="2348"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line315" />
+    <line
+       x1="2340"
+       y1="170"
+       x2="2340"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line316" />
+    <polygon
+       points="2340,209 2332,185 2348,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon316" />
+    <line
+       x1="2332"
+       y1="209"
+       x2="2348"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line317" />
+    <line
+       x1="2340"
+       y1="215"
+       x2="2340"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="1.2"
+       id="line318" />
+    <circle
+       cx="2340"
+       cy="363"
+       r="2.5"
+       fill="#a9a9a9"
+       id="circle318" />
+  </g>
+  <g
+     id="key-53-E6"
+     inkscape:label="E6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2385"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text318">E6</text>
+    <circle
+       cx="2385"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle319" />
+    <line
+       x1="2385"
+       y1="58"
+       x2="2385"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line319" />
+    <line
+       x1="2385"
+       y1="115"
+       x2="2385"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line320" />
+    <circle
+       cx="2385"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle320" />
+    <circle
+       cx="2385"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle321" />
+    <line
+       x1="2385"
+       y1="135"
+       x2="2393"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line321" />
+    <line
+       x1="2385"
+       y1="170"
+       x2="2385"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line322" />
+    <polygon
+       points="2385,209 2377,185 2393,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon322" />
+    <line
+       x1="2377"
+       y1="209"
+       x2="2393"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line323" />
+    <line
+       x1="2385"
+       y1="215"
+       x2="2385"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="1.2"
+       id="line324" />
+    <circle
+       cx="2385"
+       cy="363"
+       r="2.5"
+       fill="#a9a9a9"
+       id="circle324" />
+  </g>
+  <g
+     id="key-54-F6"
+     inkscape:label="F6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2430"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text324">F6</text>
+    <circle
+       cx="2430"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle325" />
+    <line
+       x1="2430"
+       y1="70"
+       x2="2430"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line325" />
+    <line
+       x1="2430"
+       y1="115"
+       x2="2430"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line326" />
+    <circle
+       cx="2430"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle326" />
+    <circle
+       cx="2430"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle327" />
+    <line
+       x1="2430"
+       y1="135"
+       x2="2438"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line327" />
+    <line
+       x1="2430"
+       y1="170"
+       x2="2430"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line328" />
+    <polygon
+       points="2430,209 2422,185 2438,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon328" />
+    <line
+       x1="2422"
+       y1="209"
+       x2="2438"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line329" />
+    <line
+       x1="2430"
+       y1="215"
+       x2="2430"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="1.2"
+       id="line330" />
+    <circle
+       cx="2430"
+       cy="363"
+       r="2.5"
+       fill="#a9a9a9"
+       id="circle330" />
+  </g>
+  <g
+     id="key-55-F#6"
+     inkscape:label="F#6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2475"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text330">F#6</text>
+    <circle
+       cx="2475"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle331" />
+    <line
+       x1="2475"
+       y1="10"
+       x2="2475"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line331" />
+    <line
+       x1="2475"
+       y1="115"
+       x2="2475"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line332" />
+    <circle
+       cx="2475"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle332" />
+    <circle
+       cx="2475"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle333" />
+    <line
+       x1="2475"
+       y1="135"
+       x2="2483"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line333" />
+    <line
+       x1="2475"
+       y1="170"
+       x2="2475"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line334" />
+    <polygon
+       points="2475,209 2467,185 2483,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon334" />
+    <line
+       x1="2467"
+       y1="209"
+       x2="2483"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line335" />
+    <line
+       x1="2475"
+       y1="215"
+       x2="2475"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="1.2"
+       id="line336" />
+    <circle
+       cx="2475"
+       cy="363"
+       r="2.5"
+       fill="#a9a9a9"
+       id="circle336" />
+  </g>
+  <g
+     id="key-56-G6"
+     inkscape:label="G6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2520"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text336">G6</text>
+    <circle
+       cx="2520"
+       cy="22"
+       r="2.5"
+       fill="#3cb44b"
+       id="circle337" />
+    <line
+       x1="2520"
+       y1="22"
+       x2="2520"
+       y2="115"
+       stroke="#3cb44b"
+       stroke-width="1.2"
+       id="line337" />
+    <line
+       x1="2520"
+       y1="115"
+       x2="2520"
+       y2="135"
+       stroke="#3cb44b"
+       stroke-width="1.5"
+       id="line338" />
+    <circle
+       cx="2520"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle338" />
+    <circle
+       cx="2520"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle339" />
+    <line
+       x1="2520"
+       y1="135"
+       x2="2528"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line339" />
+    <line
+       x1="2520"
+       y1="170"
+       x2="2520"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line340" />
+    <polygon
+       points="2520,209 2512,185 2528,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon340" />
+    <line
+       x1="2512"
+       y1="209"
+       x2="2528"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line341" />
+    <line
+       x1="2520"
+       y1="215"
+       x2="2520"
+       y2="375"
+       stroke="#469990"
+       stroke-width="1.2"
+       id="line342" />
+    <circle
+       cx="2520"
+       cy="375"
+       r="2.5"
+       fill="#469990"
+       id="circle342" />
+  </g>
+  <g
+     id="key-57-G#6"
+     inkscape:label="G#6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2565"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text342">G#6</text>
+    <circle
+       cx="2565"
+       cy="34"
+       r="2.5"
+       fill="#4363d8"
+       id="circle343" />
+    <line
+       x1="2565"
+       y1="34"
+       x2="2565"
+       y2="115"
+       stroke="#4363d8"
+       stroke-width="1.2"
+       id="line343" />
+    <line
+       x1="2565"
+       y1="115"
+       x2="2565"
+       y2="135"
+       stroke="#4363d8"
+       stroke-width="1.5"
+       id="line344" />
+    <circle
+       cx="2565"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle344" />
+    <circle
+       cx="2565"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle345" />
+    <line
+       x1="2565"
+       y1="135"
+       x2="2573"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line345" />
+    <line
+       x1="2565"
+       y1="170"
+       x2="2565"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line346" />
+    <polygon
+       points="2565,209 2557,185 2573,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon346" />
+    <line
+       x1="2557"
+       y1="209"
+       x2="2573"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line347" />
+    <line
+       x1="2565"
+       y1="215"
+       x2="2565"
+       y2="375"
+       stroke="#469990"
+       stroke-width="1.2"
+       id="line348" />
+    <circle
+       cx="2565"
+       cy="375"
+       r="2.5"
+       fill="#469990"
+       id="circle348" />
+  </g>
+  <g
+     id="key-58-A6"
+     inkscape:label="A6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2610"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text348">A6</text>
+    <circle
+       cx="2610"
+       cy="46"
+       r="2.5"
+       fill="#f58231"
+       id="circle349" />
+    <line
+       x1="2610"
+       y1="46"
+       x2="2610"
+       y2="115"
+       stroke="#f58231"
+       stroke-width="1.2"
+       id="line349" />
+    <line
+       x1="2610"
+       y1="115"
+       x2="2610"
+       y2="135"
+       stroke="#f58231"
+       stroke-width="1.5"
+       id="line350" />
+    <circle
+       cx="2610"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle350" />
+    <circle
+       cx="2610"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle351" />
+    <line
+       x1="2610"
+       y1="135"
+       x2="2618"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line351" />
+    <line
+       x1="2610"
+       y1="170"
+       x2="2610"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line352" />
+    <polygon
+       points="2610,209 2602,185 2618,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon352" />
+    <line
+       x1="2602"
+       y1="209"
+       x2="2618"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line353" />
+    <line
+       x1="2610"
+       y1="215"
+       x2="2610"
+       y2="375"
+       stroke="#469990"
+       stroke-width="1.2"
+       id="line354" />
+    <circle
+       cx="2610"
+       cy="375"
+       r="2.5"
+       fill="#469990"
+       id="circle354" />
+  </g>
+  <g
+     id="key-59-A#6"
+     inkscape:label="A#6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2655"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text354">A#6</text>
+    <circle
+       cx="2655"
+       cy="58"
+       r="2.5"
+       fill="#911eb4"
+       id="circle355" />
+    <line
+       x1="2655"
+       y1="58"
+       x2="2655"
+       y2="115"
+       stroke="#911eb4"
+       stroke-width="1.2"
+       id="line355" />
+    <line
+       x1="2655"
+       y1="115"
+       x2="2655"
+       y2="135"
+       stroke="#911eb4"
+       stroke-width="1.5"
+       id="line356" />
+    <circle
+       cx="2655"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle356" />
+    <circle
+       cx="2655"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle357" />
+    <line
+       x1="2655"
+       y1="135"
+       x2="2663"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line357" />
+    <line
+       x1="2655"
+       y1="170"
+       x2="2655"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line358" />
+    <polygon
+       points="2655,209 2647,185 2663,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon358" />
+    <line
+       x1="2647"
+       y1="209"
+       x2="2663"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line359" />
+    <line
+       x1="2655"
+       y1="215"
+       x2="2655"
+       y2="375"
+       stroke="#469990"
+       stroke-width="1.2"
+       id="line360" />
+    <circle
+       cx="2655"
+       cy="375"
+       r="2.5"
+       fill="#469990"
+       id="circle360" />
+  </g>
+  <g
+     id="key-60-B6"
+     inkscape:label="B6"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2700"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text360">B6</text>
+    <circle
+       cx="2700"
+       cy="70"
+       r="2.5"
+       fill="#42d4f4"
+       id="circle361" />
+    <line
+       x1="2700"
+       y1="70"
+       x2="2700"
+       y2="115"
+       stroke="#42d4f4"
+       stroke-width="1.2"
+       id="line361" />
+    <line
+       x1="2700"
+       y1="115"
+       x2="2700"
+       y2="135"
+       stroke="#42d4f4"
+       stroke-width="1.5"
+       id="line362" />
+    <circle
+       cx="2700"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle362" />
+    <circle
+       cx="2700"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle363" />
+    <line
+       x1="2700"
+       y1="135"
+       x2="2708"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line363" />
+    <line
+       x1="2700"
+       y1="170"
+       x2="2700"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line364" />
+    <polygon
+       points="2700,209 2692,185 2708,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon364" />
+    <line
+       x1="2692"
+       y1="209"
+       x2="2708"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line365" />
+    <line
+       x1="2700"
+       y1="215"
+       x2="2700"
+       y2="375"
+       stroke="#469990"
+       stroke-width="1.2"
+       id="line366" />
+    <circle
+       cx="2700"
+       cy="375"
+       r="2.5"
+       fill="#469990"
+       id="circle366" />
+  </g>
+  <g
+     id="key-61-C7"
+     inkscape:label="C7"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <text
+       x="2745"
+       y="100"
+       text-anchor="middle"
+       font-family="monospace"
+       font-size="10px"
+       fill="#000000"
+       id="text366">C7</text>
+    <circle
+       cx="2745"
+       cy="10"
+       r="2.5"
+       fill="#e6194b"
+       id="circle367" />
+    <line
+       x1="2745"
+       y1="10"
+       x2="2745"
+       y2="115"
+       stroke="#e6194b"
+       stroke-width="1.2"
+       id="line367" />
+    <line
+       x1="2745"
+       y1="115"
+       x2="2745"
+       y2="135"
+       stroke="#e6194b"
+       stroke-width="1.5"
+       id="line368" />
+    <circle
+       cx="2745"
+       cy="135"
+       r="2"
+       fill="#000000"
+       id="circle368" />
+    <circle
+       cx="2745"
+       cy="170"
+       r="2"
+       fill="#000000"
+       id="circle369" />
+    <line
+       x1="2745"
+       y1="135"
+       x2="2753"
+       y2="165"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line369" />
+    <line
+       x1="2745"
+       y1="170"
+       x2="2745"
+       y2="185"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line370" />
+    <polygon
+       points="2745,209 2737,185 2753,185 "
+       fill="none"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="polygon370" />
+    <line
+       x1="2737"
+       y1="209"
+       x2="2753"
+       y2="209"
+       stroke="#000000"
+       stroke-width="1.5"
+       id="line371" />
+    <line
+       x1="2745"
+       y1="215"
+       x2="2745"
+       y2="375"
+       stroke="#469990"
+       stroke-width="1.2"
+       id="line372" />
+    <circle
+       cx="2745"
+       cy="375"
+       r="2.5"
+       fill="#469990"
+       id="circle372" />
+  </g>
+  <g
+     id="output-bus-lines"
+     inkscape:label="Output Bus Lines"
+     transform="matrix(0.34192678,0,0,0.34192678,41.546984,49.983513)">
+    <line
+       x1="20"
+       y1="255"
+       x2="45"
+       y2="255"
+       stroke="#800000"
+       stroke-width="2"
+       id="line373" />
+    <text
+       x="15"
+       y="259"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#800000"
+       font-weight="bold"
+       id="text373">OUT1</text>
+    <line
+       x1="20"
+       y1="267"
+       x2="315"
+       y2="267"
+       stroke="#e6194b"
+       stroke-width="2"
+       id="line374" />
+    <text
+       x="15"
+       y="271"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#e6194b"
+       font-weight="bold"
+       id="text374">OUT2</text>
+    <line
+       x1="20"
+       y1="279"
+       x2="585"
+       y2="279"
+       stroke="#f58231"
+       stroke-width="2"
+       id="line375" />
+    <text
+       x="15"
+       y="283"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#f58231"
+       font-weight="bold"
+       id="text375">OUT3</text>
+    <line
+       x1="20"
+       y1="291"
+       x2="855"
+       y2="291"
+       stroke="#bfef45"
+       stroke-width="2"
+       id="line376" />
+    <text
+       x="15"
+       y="295"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#bfef45"
+       font-weight="bold"
+       id="text376">OUT4</text>
+    <line
+       x1="20"
+       y1="303"
+       x2="1125"
+       y2="303"
+       stroke="#3cb44b"
+       stroke-width="2"
+       id="line377" />
+    <text
+       x="15"
+       y="307"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#3cb44b"
+       font-weight="bold"
+       id="text377">OUT5</text>
+    <line
+       x1="20"
+       y1="315"
+       x2="1395"
+       y2="315"
+       stroke="#42d4f4"
+       stroke-width="2"
+       id="line378" />
+    <text
+       x="15"
+       y="319"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#42d4f4"
+       font-weight="bold"
+       id="text378">OUT6</text>
+    <line
+       x1="20"
+       y1="327"
+       x2="1665"
+       y2="327"
+       stroke="#4363d8"
+       stroke-width="2"
+       id="line379" />
+    <text
+       x="15"
+       y="331"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#4363d8"
+       font-weight="bold"
+       id="text379">OUT7</text>
+    <line
+       x1="20"
+       y1="339"
+       x2="1935"
+       y2="339"
+       stroke="#911eb4"
+       stroke-width="2"
+       id="line380" />
+    <text
+       x="15"
+       y="343"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#911eb4"
+       font-weight="bold"
+       id="text380">OUT8</text>
+    <line
+       x1="20"
+       y1="351"
+       x2="2205"
+       y2="351"
+       stroke="#f032e6"
+       stroke-width="2"
+       id="line381" />
+    <text
+       x="15"
+       y="355"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#f032e6"
+       font-weight="bold"
+       id="text381">OUT9</text>
+    <line
+       x1="20"
+       y1="363"
+       x2="2475"
+       y2="363"
+       stroke="#a9a9a9"
+       stroke-width="2"
+       id="line382" />
+    <text
+       x="15"
+       y="367"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#a9a9a9"
+       font-weight="bold"
+       id="text382">OUT10</text>
+    <line
+       x1="20"
+       y1="375"
+       x2="2745"
+       y2="375"
+       stroke="#469990"
+       stroke-width="2"
+       id="line383" />
+    <text
+       x="15"
+       y="379"
+       text-anchor="end"
+       font-family="monospace"
+       font-size="11px"
+       fill="#469990"
+       font-weight="bold"
+       id="text383">OUT11</text>
+  </g>
+  <metadata
+     id="metadata383">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>61-Key Organ Switch Matrix Schematic</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
