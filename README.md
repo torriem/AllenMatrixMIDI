@@ -14,7 +14,7 @@ Here's a diagram of how an individual keyboard is wired.  Both keyboards are wir
 
 ![MOSII Keyboard Matrix(organ_keys_schematic.png)](organ_keys_schematic.png)
 
-Since the Teensy operates with isolated voltage potential, it's possible for the Teensy and also the built-in Allen organ computer to scan the keyboards at the same time. This should allow a MIDI interface to connect to an unaltered organ.
+You cannot connect the Teensy to the keyboard at the same time the normal organ circuitry is connected.  A circuit board is needed to use relays to galvanically switch the keyboard between the stock organ and the Allen internal circuitry.
 
 The sketch turns keyboard presses and releases into MIDI NOTE ON and NOTE OFF events, with a velocity of 127.  The first keyboard events are on channel 1, the second on channel 2, and the pedal board on channel 3.  If you want to change it, you can set it in the sketch.
 
@@ -139,3 +139,6 @@ The pedal board is read by sending high signals to six wires that connect to Tee
 | 60  | B6   | IN6   | OUT11   | IN6-OUT11 |
 | 61  | C7   | IN1   | OUT11   | IN1-OUT11 |
 
+## Issues
+
+Currently the Teensy occasionally reboots.  This could be do to unstable voltage provided by a USB hub.  Possibly dedicated a 5v power supply to the Teensy is needed (A trace on the Teensy 4.1 has to be cut to safely do this), or a powered hub, or plug the Teensy directly into the computer.
